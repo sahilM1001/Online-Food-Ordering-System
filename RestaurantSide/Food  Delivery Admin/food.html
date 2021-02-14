@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <title>Food Item Management</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav_icon" onclick="toggleSidebar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navbar__left">
+                <a class="active_link" href="#">Admin</a>
+                <a href="https://pensive-almeida-53933d.netlify.app/">Website</a>
+                <a href="https://pensive-almeida-53933d.netlify.app/restaurants.html">Restaurants</a>
+                
+            </div>
+            <div class="navbar__right">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-clock-o"></i>
+                </a>
+                <a href="#">
+                    <img width="30" src="assets/avatar.svg" alt="Avatar image">
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div class="main__container">
+                <div class="main__title">
+                    <img src="assets/hello.svg">
+                    <div class="main__greeting">
+                        <h1>Hello Restaurant</h1>
+                        <p>Welcome to Food Item Management</p>
+                    </div>
+                </div>
+
+                <div class="main__cards">
+                   
+                    <div class="cards">
+                        <i class="fa fa-cutlery fa-2x text-red" aria-hidden="true"></i>
+                        <div class="cards__inner">
+                            <p class="text-primary-p">Total Food Categories</p>
+                            <span class="font-bold text-title">4</span>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <i class="fa fa-lemon-o fa-2x text-lightblue"></i>
+                        <div class="cards__inner">
+                            <p class="text-primary-p">Total Food Items</p>
+                            <span class="font-bold text-title">85</span>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <i class="fa fa-anchor fa-2x "></i>
+                        <div class="cards__inner">
+                            <p class="text-primary-p">New Food Categories</p>
+                            <span class="font-bold text-title">1</span>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <i class="fa fa-plus-circle fa-2x t"></i>
+                        <div class="cards__inner">
+                            <p class="text-primary-p">New Food Items </p>
+                            <span class="font-bold text-title">5</span>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="charts_food">
+
+                    <div class="charts__left">
+                        <div class="charts__left__title">
+                            <div>
+                                <h1>Food Items</h1>
+                                <p>add or update food items</p>
+                            </div>
+                            
+                        </div><br>
+
+
+                        <div class="food">
+                            <table>
+                                <tr>
+                                    <td><i class="fa fa-cutlery fa-2x" aria-hidden="true"></i></td>
+                                    <td><input type="username" class="user-input" placeholder="Food Item Name" size="40px"/></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-lemon-o fa-2x" aria-hidden="true"></i></td>
+                                    <td><input type="username" class="user-input" placeholder="Food Category" size="40px"/></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-inr fa-2x" aria-hidden="true"></i></td>
+                                    <td><input type="username" class="user-input" placeholder="Price" size="40px"/></td>
+                                </tr>
+                            </table>
+                        </div><br>
+
+                        <div class="food">
+                            <input type="button" class="button1" value="ADD" />             
+                            <input type="button" class="button1" value="UPDATE" />
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br>
+                    
+
+                    <div class="charts__right">
+                        <div class="charts__right__title">
+                            <div>
+                                <h1>Food Categories</h1>
+                                <p>For Ahmedabad, Gujarat, India</p>
+                            </div>
+                            <i class="fa fa-inr"></i>
+                        </div>
+                        
+                        <div class="charts__right__cards">
+                           
+                            <div class="card1">
+                                <h1>North-Indian</h1>
+                                <p>35</p>
+                            </div>
+
+                            <div class="card2">
+                                <h1>Chinese</h1>
+                                <p>20</p>
+                            </div>
+
+                            <div class="card3">
+                                <h1>South-Indian</h1>
+                                <p>15</p>
+                            </div>
+
+                            <div class="card4">
+                                <h1>Rajasthani</h1>
+                                <p>15</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <!--User Table Part START-->
+                <div class="charts_user">
+                    <div class="table_container">
+                        <div class="table_title">
+                            <div>
+                                <h1>Food Details</h1>
+                                <p>Data From Food Items Table</p>
+                            </div>
+                        <hr>
+                        <br>
+                        <table class="tg">
+                            <thead class="table_header">
+                              <tr>
+                                <th>F_ID</th>
+                                <th>F_category_ID</th>
+                                <th>F_Name</th>
+                                <th>F_Price</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+
+                              <tr class="table_row">
+                                <td class="tg-0lax">101</td>
+                                <td class="tg-0lax">01</td>
+                                <td class="tg-0lax">Paneer tikka</td>
+                                <td class="tg-0lax">120</td>   
+                              </tr>
+
+                              <tr class="table_row">
+                                <td class="tg-0lax">201</td>
+                                <td class="tg-0lax">02</td>
+                                <td class="tg-0lax">Manchurian</td>
+                                <td class="tg-0lax">70</td>
+                              </tr>
+
+                              <tr class="table_row">
+                                <td class="tg-0lax">301</td>
+                                <td class="tg-0lax">03</td>
+                                <td class="tg-0lax">Masala Dosa</td>
+                                <td class="tg-0lax">90</td>
+                              </tr>
+                              <tr class="table_row">
+                                <td class="tg-0lax">401</td>
+                                <td class="tg-0lax">04</td>
+                                <td class="tg-0lax">Dal-Bati</td>
+                                <td class="tg-0lax">60</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                    </div>
+                </div>
+                <!--User Table Part END-->
+            </div>
+        </main>
+        <!--SideBar START-->
+        <div id="sidebar">
+            <div class="siderbar__title">
+                <div class="sidebar__img">
+                    
+                    <p style="color:#e65061">Online Food Ordering System</p>
+                </div>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
+            </div>
+
+            <div class="sidebar__menu">
+                <div class="sidebar__link">
+                    <i class="fa fa-home"></i>
+                    <a href="./index.html">Dashboard</a>
+                </div>
+                <h2>MANAGE</h2>
+                
+                <div class="sidebar__link">
+                    <i class="fa fa-cutlery" aria-hidden="true"></i>
+                    <a href="./food.html">Food Item Management</a>
+                </div>
+
+                <div class="sidebar__link">
+                    <i class="fa fa-rocket"></i>
+                    <a href="./order.html">Orders Management</a>
+                </div>
+
+                <div class="sidebar__link">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <a href="./pay.html">Payment Management</a>
+                </div>
+
+                <div class="sidebar__link">
+                    <i class="fa fa-car" aria-hidden="true"></i> 
+                    <a href="./delivery.html">Delivery Management</a>
+                </div> 
+
+                <div class="sidebar__logout">
+                    <i class="fa fa-power-off"></i>
+                    <a href="#"> Logout</a>
+                </div>
+            </div>
+        </div>
+        <!--SideBar END-->
+    </div>
+    <!--Apex Charts cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+</body>
+</html>
