@@ -108,7 +108,8 @@ textarea {
 body {
   color: #141412;
   line-height: 1.5;
-  margin: 0; }
+  margin: 0;
+}
 
 a {
   color: #444444;
@@ -418,7 +419,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Open Sans", sans-serif;
   color: #959595;
-  font-weight: 400; }
+  font-weight: 400;
+
+}
 
 ::-webkit-input-placeholder {
   color: #959595; }
@@ -621,7 +624,7 @@ a#scrollUp {
   background: #ededed; }
 
 .bg-image--1 {
-  background-image: url(images/bg/1.jpg);
+  background-image: url(images/bg/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -1448,6 +1451,7 @@ a#scrollUp {
       transform: translateX(-50%);
       width: 200px; }
     .section__title.title__style--2 .title__line {
+      color: red;
       padding-top: 0px;
       margin-top: 0; }
     .section__title.title__style--2 p {
@@ -1474,7 +1478,7 @@ a#scrollUp {
     left: auto;
     right: 0; }
   .section__title.section__bg__black .title__line {
-    color: #ffffff; }
+    color: red; }
   .section__title.section__bg__black p {
     color: #ffffff; }
   .section__title.section__bg__black::before {
