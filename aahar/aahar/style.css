@@ -741,7 +741,7 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--21 {
-  background-image: url(images/bg/21.jpg);
+  background-image: url(images/about/b3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -2474,7 +2474,7 @@ nav.main__menu__nav {
     display: block;
     position: relative; }
     .sm__gallery__list a::before {
-      background: #000 none repeat scroll 0 0;
+      background: none repeat scroll 0 0;
       content: "";
       height: 100%;
       left: 0;
@@ -2551,9 +2551,10 @@ nav.main__menu__nav {
   -moz-justify-content: space-between;
   justify-content: space-between; }
   .single__sm__post .sin__post__thumb {
-    min-width: 70px; }
+    min-height: 25px;
+    min-width: 25px; }
   .single__sm__post .sin__post__details {
-    padding-left: 20px; }
+    padding-left: 50px; }
     .single__sm__post .sin__post__details h6 a {
       color: #e4e5e9;
       font-family: "Open Sans", sans-serif;
@@ -2562,7 +2563,7 @@ nav.main__menu__nav {
     .single__sm__post .sin__post__details p {
       color: #e4e5e9;
       font-size: 14px;
-      line-height: 24px; }
+      line-height: 25px; }
 
 .lst__post__list .single__sm__post + .single__sm__post {
   margin-top: 20px; }
@@ -5105,11 +5106,13 @@ div.slide__pizza img {
 .ht__bradcaump__wrap {
   height: 412px; }
   .ht__bradcaump__wrap .bradcaump__inner .bradcaump-title {
-    color: #444444;
+    color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
     font-size: 36px;
     font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px #333333;
+  }
   .ht__bradcaump__wrap .bradcaump__inner .bradcaump-inner {
     margin-top: 11px; }
     .ht__bradcaump__wrap .bradcaump__inner .bradcaump-inner .breadcrumb-item {
@@ -5121,7 +5124,8 @@ div.slide__pizza img {
       -moz-transition: 0.5s;
       -ms-transition: 0.5s;
       -o-transition: 0.5s;
-      transition: 0.5s; }
+      transition: 0.5s;
+      text-shadow: 0 1px 5px #333;}
     .ht__bradcaump__wrap .bradcaump__inner .bradcaump-inner .brd-separetor i {
       color: #444444;
       font-size: 17px;
@@ -5984,7 +5988,7 @@ div.slide__pizza img {
   border-bottom: 3px solid #60ba62; }
 
 .food_accordion .card-body::before {
-  background-image: url("images/shape/2.jpg");
+  background-image: url("");
   background-position: center bottom;
   background-repeat: no-repeat;
   bottom: 0;
