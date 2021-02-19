@@ -717,7 +717,7 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--17 {
-  background-image: url(images/bg/17.jpg);
+  background-image: url(images/menu-grid/food1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -735,7 +735,7 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--20 {
-  background-image: url(images/bg/20.jpg);
+  background-image: url(images/about/s-o-c-i-a-l-c-u-t-mqm2iZcYci4-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -5105,7 +5105,7 @@ div.slide__pizza img {
 .ht__bradcaump__wrap {
   height: 412px; }
   .ht__bradcaump__wrap .bradcaump__inner .bradcaump-title {
-    color: #444444;
+    color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -5113,7 +5113,7 @@ div.slide__pizza img {
   .ht__bradcaump__wrap .bradcaump__inner .bradcaump-inner {
     margin-top: 11px; }
     .ht__bradcaump__wrap .bradcaump__inner .bradcaump-inner .breadcrumb-item {
-      color: #444444;
+      color: white;
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase;
