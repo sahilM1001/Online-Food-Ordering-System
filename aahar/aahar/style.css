@@ -633,11 +633,17 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--3 {
-  background-image: url(images/bg/3.jpg);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
+
+  /*Index Menu Images size edit*/
+  .sm{
+    height: 109px;
+    width: 105px;
+  }
 .bg-image--4 {
   background-image: url(images/bg/4.jpg);
   background-repeat: no-repeat;
