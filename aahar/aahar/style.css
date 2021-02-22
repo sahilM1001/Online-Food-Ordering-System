@@ -729,10 +729,10 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--18 {
-  background-image: url(images/bg/18.jpg);
+  background-image: url(images/cart/cart.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center top; }
 
 .bg-image--19 {
   background-image: url(images/bg/19.jpg);
@@ -5122,7 +5122,7 @@ div.slide__pizza img {
   .ht__bradcaump__wrap .bradcaump__inner .bradcaump-inner {
     margin-top: 11px; }
     .ht__bradcaump__wrap .bradcaump__inner .bradcaump-inner .breadcrumb-item {
-      color: #444444;
+      color: #222222;
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase;
@@ -5131,7 +5131,7 @@ div.slide__pizza img {
       -ms-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
-      text-shadow: 0 1px 5px #333;}
+      text-shadow: 0 2px 6px #333;}
     .ht__bradcaump__wrap .bradcaump__inner .bradcaump-inner .brd-separetor i {
       color: #444444;
       font-size: 17px;
@@ -5151,7 +5151,8 @@ div.slide__pizza img {
   color: #fff; }
 
 .ht__bradcaump__wrap .bradcaump__inner.brad__white .bradcaump-title {
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0 3px 6px #333333; }
 
 /*=======  Our MEnu Grid Area =======*/
 .grid__show__item p {
