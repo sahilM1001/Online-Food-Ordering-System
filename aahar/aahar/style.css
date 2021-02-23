@@ -653,13 +653,13 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--5 {
-  background-image: url(images/bg/5.jpg);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .bg-image--6 {
-  background-image: url(images/bg/6.jpg);
+  background-image: url(images/bg/subscribe.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -2047,7 +2047,7 @@ nav.main__menu__nav {
   padding: 100px 200px;
   text-align: center; }
   .subscribe__inner h2 {
-    color: #666666;
+    color: goldenrod;
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -3511,12 +3511,12 @@ div.slide__pizza img {
   padding: 212px 56px 212px 0;
   text-align: right; }
   .app__download__container .app__download__inner h2 {
-    color: #ffffff;
+    color: black;
     font-size: 50px;
     font-style: italic;
     font-weight: 400; }
   .app__download__container .app__download__inner h6 {
-    color: #ffffff;
+    color: black;
     font-size: 36px;
     font-style: italic;
     font-weight: 400;
