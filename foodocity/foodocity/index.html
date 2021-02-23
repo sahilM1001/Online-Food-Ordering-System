@@ -782,27 +782,27 @@
                     <div class="accountbox__register tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <form action="#">
                             <div class="single-input">
-                                <input class="cr-round--lg" type="text" placeholder="User name">
+                                <input class="cr-round--lg" type="text" placeholder="User name" required maxlength="20" pattern="[A-Za-z]" title="Only Alphabetic Characters Please">
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="email" placeholder="Email address">
+                                <input class="cr-round--lg" type="email" placeholder="Email address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="number" placeholder="Mobile Number">
+                                <input class="cr-round--lg" type="number" placeholder="Mobile Number" required pattern="\d*" title="Numbers Only Please">
                             </div>
 
                             <div class="single-input">
-                                <input class="cr-round--lg" type="text" placeholder="Address">
+                                <input class="cr-round--lg" type="text" placeholder="Address" required maxlength="150">
                             </div>
                             <div class="single-input">
-                                <select class="select">
+                                <select class="select" required>
                                     <option>Admin</option>
                                     <option>Restaurant</option>
                                     <option>Customer</option>
                                 </select>
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="password" placeholder="Password">
+                                <input class="cr-round--lg" type="password" placeholder="Password" required minlength="6" maxlength="10">
                             </div>
                             
                             <div class="single-input">
