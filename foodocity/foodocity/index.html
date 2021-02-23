@@ -768,10 +768,10 @@
                     <div class="accountbox__login tab-pane fade show active" id="log" role="tabpanel" aria-labelledby="log-tab">
                         <form action="#">
                             <div class="single-input">
-                                <input class="cr-round--lg" type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                <input class="cr-round--lg" type="text" placeholder="Email" required maxlength="20" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                             </div>
                             <div class="single-input">
-                                <input class="cr-round--lg" type="password" placeholder="Password" required>
+                                <input class="cr-round--lg" type="password" placeholder="Password" required minlength="6">
                             </div>
                             <div class="single-input">
                                 <button type="submit" class="food__btn"><span>Go</span></button>
