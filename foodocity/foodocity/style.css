@@ -621,13 +621,13 @@ a#scrollUp {
   background: #ededed; }
 
 .bg-image--1 {
-  background-image: url(images/bg/7.jpg);
+  background-image: url(images/bg/try.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .bg-image--2 {
-  background-color: #eda034;
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -1491,7 +1491,7 @@ a#scrollUp {
     color: #444444;
     font-size: 16px; }
   .section__title .title__line {
-    color: #444444;
+    color: #ff3300;
     font-size: 50px;
     font-weight: 400;
     line-height: 42px;
@@ -2047,7 +2047,7 @@ nav.main__menu__nav {
   padding: 100px 200px;
   text-align: center; }
   .subscribe__inner h2 {
-    color: goldenrod;
+    color: #FFC542;
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -2496,6 +2496,11 @@ nav.main__menu__nav {
     .sm__gallery__list a img {
       width: 100%; }
 
+      .galleryList {
+        height: 80px;
+        width: 86px;
+      }
+      
 .ftr__details p {
   color: #e4e5e9;
   font-size: 14px;
@@ -2572,6 +2577,11 @@ nav.main__menu__nav {
       color: #e4e5e9;
       font-size: 14px;
       line-height: 25px; }
+
+      .recommendationImg {
+        height: 70px;
+        width: 70px;
+      }
 
 .lst__post__list .single__sm__post + .single__sm__post {
   margin-top: 20px; }
@@ -2676,14 +2686,14 @@ nav.main__menu__nav {
       text-align: center; }
       .slide .slider__content .slider__inner h2 {
         margin-bottom: 16px;
-        color: #ffffff;
+        color: red;
         font-family: "Open Sans", sans-serif;
         font-size: 50px;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 50px; }
       .slide .slider__content .slider__inner h1 {
-        color: #ffffff;
+        color:#3DD598;
         font-family: "Open Sans", sans-serif;
         font-size: 50px;
         font-weight: 700;
@@ -3069,9 +3079,10 @@ div.slide__pizza img {
         -webkit-align-items: flex-end;
         -moz-align-items: flex-end;
         align-items: flex-end;
-        color: #444444;
+        
         font-size: 22px;
-        padding-left: 15px; }
+        padding-left: 15px;
+      }
     .service__wrapper .service .service__details p {
       color: #959595;
       font-size: 14px;
@@ -3511,12 +3522,12 @@ div.slide__pizza img {
   padding: 212px 56px 212px 0;
   text-align: right; }
   .app__download__container .app__download__inner h2 {
-    color: black;
+    color: #3DD598;
     font-size: 50px;
     font-style: italic;
     font-weight: 400; }
   .app__download__container .app__download__inner h6 {
-    color: black;
+    color: #3DD598;
     font-size: 36px;
     font-style: italic;
     font-weight: 400;
@@ -3762,7 +3773,7 @@ div.slide__pizza img {
 	Testimonial Area
 -------------------------*/
 .testimonial__activation--1 {
-  background-image: url("images/testimonial/img/1.jpg");
+  background-image: url("images/testimonial/img/");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: auto auto;
@@ -3792,7 +3803,7 @@ div.slide__pizza img {
   .testimonial .testimonial__thumb {
     margin-bottom: 18px; }
   .testimonial .testimonial__details h4 {
-    color: #333333;
+    color: red;
     font-family: Open Sans;
     font-weight: 400;
     text-transform: capitalize; }
@@ -3804,7 +3815,7 @@ div.slide__pizza img {
     margin-top: 6px;
     text-transform: capitalize; }
   .testimonial .testimonial__details p {
-    color: #333333;
+    color: #FFC542 ;
     font-size: 20px;
     font-style: italic;
     line-height: 36px;
@@ -7666,8 +7677,22 @@ div.slide__pizza img {
       border: 0 none; }
 
 .cr-round--lg {
-  border-radius: 100px; }
+  border-radius: 100px; 
+  outline: none;
+}
 
+.select {
+  border-radius: 100px;
+  outline: none;
+  width: 100%;
+  background-color: inherit;
+  padding: 0 35px;
+  height: 40px;
+  line-height: 42px;
+}
+.select option {
+  color: #333 !important;
+}
 .social-icons ul {
   display: -webkit-box;
   display: -webkit-flex;
