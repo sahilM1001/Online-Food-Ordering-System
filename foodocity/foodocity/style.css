@@ -767,7 +767,7 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--24 {
-  background-image: url(images/bg/24.jpg);
+  background-image: url(images/banner/contact/contact4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -8843,4 +8843,7 @@ input[type="submit"] {
   .subs--4 .fd__subscribe__area {
     padding: 0; } }
 
+  div.box {
+    text-align: center;
+    }
 /*# sourceMappingURL=style.css.map */
