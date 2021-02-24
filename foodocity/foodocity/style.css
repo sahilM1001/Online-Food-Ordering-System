@@ -737,7 +737,7 @@ a#scrollUp {
   background-position: center top; }
 
 .bg-image--19 {
-  background-image: url(images/bg/19.jpg);
+  background-color: #ff3300;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -755,7 +755,7 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--22 {
-  background-image: url(images/bg/22.jpg);
+  background-color: #FFC542;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
