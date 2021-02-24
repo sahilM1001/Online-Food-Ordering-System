@@ -521,6 +521,9 @@ main {
 }
 .tg .tg-0lax{
     text-align:center;
+    width: 50px;
+    text-overflow: ellipsis;
+
     vertical-align:top
 }
 
