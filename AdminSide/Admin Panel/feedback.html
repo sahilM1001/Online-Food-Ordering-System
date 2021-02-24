@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/adminStyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav_icon" onclick="toggleSidebar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navbar__left">
+                <a class="active_link" href="#">Admin</a>
+                <a href="https://pensive-almeida-53933d.netlify.app/">Website</a>
+                <a href="https://pensive-almeida-53933d.netlify.app/restaurants.html">Restaurants</a>
+                
+            </div>
+            <div class="navbar__right">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-clock-o"></i>
+                </a>
+                <a href="#">
+                    <img width="30" src="assets/avatar.svg" alt="Avatar image">
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div class="main__container">
+                <div class="main__title">
+                    <img src="assets/hello.svg">
+                    <div class="main__greeting">
+                        <h1>Hello Admin</h1>
+                        <p>Welcome to Feedbacks</p>
+                    </div>
+                </div>
+
+                <div class="main__cards">
+                   
+                    <div class="cards">
+                        <i class="fa fa-bomb fa-2x text-lightblue"></i>
+                        <div class="cards__inner">
+                            <p class="text-primary-p">Total Feedbacks</p>
+                            <span class="font-bold text-title">100</span>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <i class="fa fa-money fa-2x text-red"></i>
+                        <div class="cards__inner">
+                            <p class="text-primary-p">Positive Feedbacks</p>
+                            <span class="font-bold text-title">95</span>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <i class="fa fa-times fa-2x t"></i>
+                        <div class="cards__inner">
+                            <p class="text-primary-p">Problems Raised</p>
+                            <span class="font-bold text-title">3</span>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <i class="fa fa-percent fa-2x t"></i>
+                        <div class="cards__inner">
+                            <p class="text-primary-p">Negative Feedbacks </p>
+                            <span class="font-bold text-title">2</span>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!--User Table Part START-->
+                <div class="charts_user">
+                    <div class="table_container">
+                        <div class="table_title">
+                            <div>
+                                <h1>Feedback Details</h1>
+                                <p>Data From Feedback Table</p>
+                            </div>
+                        <hr>
+                        <br>
+                        <table class="tg">
+                            <thead class="table_header">
+                              <tr>
+                                <th>Feedback ID</th>
+                                <th>User ID</th>
+                                <th>Feedback Details</th>
+                                <th>Feedback Date</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="table_row">
+                                <td class="tg-0lax">101</td>
+                                <td class="tg-0lax">102</td>
+                                <td class="tg-0lax">Excellent Quality food must try</td>
+                                <td class="tg-0lax">24/02/2021</td>
+                                
+                              </tr>
+                              <tr class="table_row">
+                                <td class="tg-0lax">102</td>
+                                <td class="tg-0lax">105</td>
+                                <td class="tg-0lax">The food quality was great, but there were some problems in the delivery</td>
+                                <td class="tg-0lax">01/01/2021</td>
+                            
+                              </tr>
+                              <tr class="table_row">
+                                <td class="tg-0lax">103</td>
+                                <td class="tg-0lax">110</td>
+                                <td class="tg-0lax">Must try for everyone who is missing their homemade food in a new city.</td>
+                                <td class="tg-0lax">15/01/2021</td>
+                                
+                              </tr>
+                              
+                            </tbody>
+                            </table>
+                    </div>
+                </div>
+                <!--User Table Part END-->
+            </div>
+        </main>
+
+        <!--Sidebar START-->
+        <div id="sidebar">
+            <div class="siderbar__title">
+                <div class="sidebar__img">
+                    
+                    <p style="color:#e65061">Online Food Ordering System</p>
+                </div>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
+            </div>
+
+            <div class="sidebar__menu">
+                <div class="sidebar__link active_menu_link">
+                    <i class="fa fa-home"></i>
+                    <a href="#">Dashboard</a>
+                </div>
+                <h2>MANAGE</h2>
+                
+                <div class="sidebar__link">
+                    <i class="fa fa-user-circle"></i>
+                    <a href="./user.html">User Management</a>
+                </div>
+
+                <div class="sidebar__link">
+                    <i class="fa fa-rocket"></i>
+                    <a href="./order.html">Orders Management</a>
+                </div>
+
+                <div class="sidebar__link">
+                    <i class="fa fa-user"></i>
+                    <a href="#">Manage Feedbacks</a>
+                </div>
+
+                <div class="sidebar__logout">
+                    <i class="fa fa-power-off"></i>
+                    <a href="./logout.html"> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SideBar ENDS-->
+    <!--Apex Charts cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+</body>
+</html>
