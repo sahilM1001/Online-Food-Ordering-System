@@ -15,9 +15,9 @@
                 <i class="fa fa-bars"></i>
             </div>
             <div class="navbar__left">
-                <a class="active_link" href="#">Admin</a>
-                <a href="https://pensive-almeida-53933d.netlify.app/">Website</a>
-                <a href="https://pensive-almeida-53933d.netlify.app/restaurants.html">Restaurants</a>
+                <a href="../../AdminSide/Admin Panel/index.html">Admin</a>
+                <a href="../../foodocity/foodocity/index.html">Website</a>
+                <a class="active_link" href="./index.html">Restaurants</a>
                 
             </div>
             <div class="navbar__right">
@@ -37,7 +37,7 @@
                 <div class="main__title">
                     <img src="assets/hello.svg">
                     <div class="main__greeting">
-                        <h1>Hello Restaurant</h1>
+                        <h1>Hello</h1>
                         <p>Welcome to Food Item Management</p>
                     </div>
                 </div>
@@ -84,32 +84,45 @@
                         <div class="charts__left__title">
                             <div>
                                 <h1>Food Items</h1>
-                                <p>add or update food items</p>
+                                <p>Add/Update food items</p>
                             </div>
                             
                         </div><br>
 
 
                         <div class="food">
-                            <table>
-                                <tr>
-                                    <td><i class="fa fa-cutlery fa-2x" aria-hidden="true"></i></td>
-                                    <td><input type="username" class="user-input" placeholder="Food Item Name" size="40px"/></td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fa fa-lemon-o fa-2x" aria-hidden="true"></i></td>
-                                    <td><input type="username" class="user-input" placeholder="Food Category" size="40px"/></td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fa fa-inr fa-2x" aria-hidden="true"></i></td>
-                                    <td><input type="username" class="user-input" placeholder="Price" size="40px"/></td>
-                                </tr>
-                            </table>
-                        </div><br>
+                            <form id="addForm">
+                                <div class="formInputs">
+                                    <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
+                                    <input type="number" class="user-input" placeholder="Food Item ID" maxlength="10"/>
+                                </div>
+                                
+                                <div class="formInputs">
+                                    <i class="fa fa-lemon-o fa-2x" aria-hidden="true"></i>
+                                    <input type="text" class="user-input" placeholder="Food Item Name" minlength="5" maxlength="25"/>
+                                </div>
+
+                                <div class="formInputs">
+                                    <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
+                                    <input type="text" class="user-input" placeholder="Food Item Category" />
+                                </div>
+
+                                <div class="formInputs">
+                                    <i class="fa fa-inr fa-2x" aria-hidden="true"></i>
+                                    
+                                    <input type="number" class="user-input" placeholder="Food Item Price" style="margin-left: 10px;"/>
+                                </div>
+                            </form>
+                            
+                            <div class="formInputs">
+                                <input type="button" class="button1" value="ADD" />             
+                                <input type="button" class="button1" value="UPDATE" />
+                            </div>
+                                
+                        </div>
 
                         <div class="food">
-                            <input type="button" class="button1" value="ADD" />             
-                            <input type="button" class="button1" value="UPDATE" />
+                            
                         </div>
 
                     </div>
@@ -179,28 +192,28 @@
                               <tr class="table_row">
                                 <td class="tg-0lax">101</td>
                                 <td class="tg-0lax">01</td>
-                                <td class="tg-0lax">Paneer tikka</td>
-                                <td class="tg-0lax">120</td>   
+                                <td class="tg-0lax">Paneer Chilli</td>
+                                <td class="tg-0lax">180</td>   
                               </tr>
 
                               <tr class="table_row">
                                 <td class="tg-0lax">201</td>
                                 <td class="tg-0lax">02</td>
-                                <td class="tg-0lax">Manchurian</td>
-                                <td class="tg-0lax">70</td>
+                                <td class="tg-0lax">French Fries</td>
+                                <td class="tg-0lax">80</td>
                               </tr>
 
                               <tr class="table_row">
                                 <td class="tg-0lax">301</td>
                                 <td class="tg-0lax">03</td>
                                 <td class="tg-0lax">Masala Dosa</td>
-                                <td class="tg-0lax">90</td>
+                                <td class="tg-0lax">120</td>
                               </tr>
                               <tr class="table_row">
                                 <td class="tg-0lax">401</td>
                                 <td class="tg-0lax">04</td>
-                                <td class="tg-0lax">Dal-Bati</td>
-                                <td class="tg-0lax">60</td>
+                                <td class="tg-0lax">Dal-Rice Combo</td>
+                                <td class="tg-0lax">180</td>
                               </tr>
                             </tbody>
                             </table>
