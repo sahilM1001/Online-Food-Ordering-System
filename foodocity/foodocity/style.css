@@ -1831,7 +1831,7 @@ a#scrollUp {
   display: flex; }
 
 .log__in a,
-.shopping__cart a {
+.ping__cart a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
