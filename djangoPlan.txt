@@ -1,0 +1,29 @@
+DJANGO CONVERSION PLAN
+
+Step 1 : 
+Learn basic django and file structure from akash sir's video
+
+Step 2 : 
+Create django project, will be done by sahil, for safety reasons.
+
+Step 3 : 
+First make an index file which contains header nav-bar and footer styles for the user side. 
+
+Step 4: 
+add this file at every other file's top in user side, remove the header and navbar from all the other files.
+
+Step 5: 
+Admin Side and restaurant side django conversion will be done by sahil
+
+Step 6: 
+User side django conversion to be done by sourav and divyansh
+
+Step 7: 
+Work in your own git branches, merge karte time iss baar zyada dhyaan rakhna padega
+
+
+Step 8: 
+Complete django conversion in one week for admin and restaurant side. 1.5 weeks for user side.
+
+Step 9 : 
+Maintain code consistency, merge conflicts hote bachaao, regularly kaam start karne se pehle pull le liya karo. 
