@@ -18,6 +18,13 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('', include('app1.urls')),
     path('user', include('userapp.urls'))   
+=======
+    path('foodAdmin', include('app1.urls')),
+    path('user', include('users.urls')),
+    path('restaurant', include('restaurants.urls')),
+	
+>>>>>>> sahil
 ]

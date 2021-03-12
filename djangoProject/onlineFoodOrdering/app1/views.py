@@ -1,19 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
 # Create your views here.
 
 #Admin Page Views START HERE
 def adminhomePageView(request):
-    return render(request, 'index.html')
+
+    return HttpResponse("Welcome to admin Home")
 
 def adminUserMGTPageView(request):
-    return render(request, 'user.html')
+    return HttpResponse("Welcome to User Management")
 
 def adminOrderMGTPageView(request):
-    return render(request, 'order.html')
+    return HttpResponse("Welcome to Orders page")
 
 def adminFeedbackMGTPageView(request):
-    return render(request, 'feedback.html')
+    return HttpResponse("Welcome to Orders page")
 
 #Admin Page Views END HERE
 
