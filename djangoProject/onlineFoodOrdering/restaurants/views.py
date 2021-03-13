@@ -5,16 +5,19 @@ from django.template import loader
 
 #restaurant Page Views START HERE
 def restaurantHomePageView(request):
-    return render(request, 'restaurants/trailSetup2.html')
+    return render(request, 'restaurants/restaurantMaster.html')
 
 def restaurantFoodItemPageView(request):
-    return HttpResponse("Welcome to restaurant food items Management")
+    return render(request, 'restaurants/index.html')
 
 def restaurantOrderMGTPageView(request):
-    return HttpResponse("Welcome to restaurant Orders page")
+    return render(request, 'restaurants/order.html')
+
+def restaurantDeliveryMGTPageView(request):
+    return render(request, 'restaurants/delivery.html')
 
 def restaurantFeedbackMGTPageView(request):
-    return HttpResponse("Welcome to restaurant feedbacks page")
+    return render(request, 'restaurants/feedback.html')
 
 #restaurant Page Views END HERE
 
