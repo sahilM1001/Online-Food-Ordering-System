@@ -2,12 +2,47 @@
 <!DOCTYPE>
 <html>
     <head>
-        <title>Sign Up</title>
-        <link rel="stylesheet" href="{% static 'signupStyles.css'%}">
+        <title>Login</title>
+        <link rel="stylesheet" href="{% static 'loginStyles.css'%}">
     </head>
+
     <body>
         <div class="container">
+            <div class="leftContainer">
+                <h1>
+                    Welcome to Food-O-City
+                </h1>
 
+                <div>
+                    <img src="../../static/images/foodocity.PNG">
+                </div>
+            </div>
+
+            <div class="rightContainer">
+                <h1>
+                    Login Now
+                </h1>
+
+                <form action="">
+                    <div class="formRow">
+                        <label>Email Id</label>
+                        <input type="text" placeholder="User Name or Email" class="formInputRows">
+                    </div>
+                    <div class="formRow">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter Password" class="formInputRows">
+                    </div>
+
+                    <div class="formRow">
+                        <button type="submit" class="loginBtn">Log In</button>
+                    </div>
+
+                    <div>
+                        <a href="">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+            
         </div>
     </body>
 </html>

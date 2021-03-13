@@ -11,7 +11,7 @@ def adminUserMGTPageView(request):
     return render(request, 'app1/user.html')
 
 def adminOrderMGTPageView(request):
-    return HttpResponse("Welcome to admin Orders page")
+    return render(request, 'app1/order.html')
 
 def adminFeedbackMGTPageView(request):
     return render(request, 'app1/feedback.html')
