@@ -1,38 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/adminStyles.css">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
-    <title>User Management</title>
-</head>
-<body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="nav_icon" onclick="toggleSidebar()">
-                <i class="fa fa-bars"></i>
-            </div>
-            <div class="navbar__left">
-                <a class="active_link" href="#">Admin</a>
-                <a href="https://pensive-almeida-53933d.netlify.app/">Website</a>
-                <a href="https://pensive-almeida-53933d.netlify.app/restaurants.html">Restaurants</a>
-                
-            </div>
-            <div class="navbar__right">
-                <a href="#">
-                    <i class="fa fa-search"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-clock-o"></i>
-                </a>
-                <a href="#">
-                    <img width="30" src="assets/avatar.svg" alt="Avatar image">
-                </a>
-            </div>
-        </nav>
-        <main>
+{% extends 'app1/adminMaster.html' %}  
+{% load static %}      
+{% block admincontent %}
+<main>
             <div class="main__container">
                 <div class="main__title">
                     <img src="assets/hello.svg">
@@ -202,49 +171,8 @@
                 <!--User Table Part END-->
             </div>
         </main>
-        <!--SideBar START-->
-        <div id="sidebar">
-            <div class="siderbar__title">
-                <div class="sidebar__img">
-                    
-                    <p style="color:#e65061">Online Food Ordering System</p>
-                </div>
-                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
-            </div>
-
-            <div class="sidebar__menu">
-                <div class="sidebar__link">
-                    <i class="fa fa-home"></i>
-                    <a href="./index.html">Dashboard</a>
-                </div>
-                <h2>MANAGE</h2>
-                
-
-                <div class="sidebar__link active_menu_link">
-                    <i class="fa fa-user-circle"></i>
-                    <a href="#">User Management</a>
-                </div>
-
-                <div class="sidebar__link">
-                    <i class="fa fa-rocket"></i>
-                    <a href="./order.html">Orders Management</a>
-                </div>
-
-                <div class="sidebar__link">
-                    <i class="fa fa-bar-chart"></i>
-                    <a href="./feedback.html">Feedbacks Management</a>
-                </div>
-
-                <div class="sidebar__logout">
-                    <i class="fa fa-power-off"></i>
-                    <a href="./logout.html"> Logout</a>
-                </div>
-            </div>
-        </div>
-        <!--SideBar END-->
-    </div>
+        
     <!--Apex Charts cdn-->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="script.js"></script>
-</body>
-</html>
+{% endblock %}

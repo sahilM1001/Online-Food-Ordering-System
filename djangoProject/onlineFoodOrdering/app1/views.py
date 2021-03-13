@@ -5,16 +5,16 @@ from django.template import loader
 
 #Admin Page Views START HERE
 def adminhomePageView(request):
-    return render(request, 'app1/trialSetup1.html')
+    return render(request, 'app1/adminMaster.html')
 
 def adminUserMGTPageView(request):
-    return HttpResponse("Welcome to admin User Management")
+    return render(request, 'app1/user.html')
 
 def adminOrderMGTPageView(request):
     return HttpResponse("Welcome to admin Orders page")
 
 def adminFeedbackMGTPageView(request):
-    return HttpResponse("Welcome to admin feedbacks page")
+    return render(request, 'app1/feedback.html')
 
 #Admin Page Views END HERE
 
