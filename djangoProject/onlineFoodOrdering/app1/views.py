@@ -9,13 +9,13 @@ def adminhomePageView(request):
     return HttpResponse("Welcome to admin Home")
 
 def adminUserMGTPageView(request):
-    return HttpResponse("Welcome to User Management")
+    return HttpResponse("Welcome to admin User Management")
 
 def adminOrderMGTPageView(request):
-    return HttpResponse("Welcome to Orders page")
+    return HttpResponse("Welcome to admin Orders page")
 
 def adminFeedbackMGTPageView(request):
-    return HttpResponse("Welcome to Orders page")
+    return HttpResponse("Welcome to admin feedbacks page")
 
 #Admin Page Views END HERE
 
