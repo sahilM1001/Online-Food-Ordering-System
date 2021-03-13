@@ -1,16 +1,13 @@
 {%load static %}
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'restaurantStyles.css'%}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Restaurant Dashboard</title>
+    <link rel="stylesheet" href="{% static 'adminStyles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <title>Admin Dashboard</title>
 </head>
-
 <body>
     <div class="container">
         <nav class="navbar">
@@ -18,10 +15,10 @@
                 <i class="fa fa-bars"></i>
             </div>
             <div class="navbar__left">
-                <a href="../../AdminSide/Admin Panel/index.html">admin</a>
-                <a href="../../foodocity/foodocity/index.html">Website</a>
-                <a class="active_link" href="../../RestaurantSide/Food  Delivery Admin/index.html">Restaurants</a>
-
+                <a class="active_link" href="#">Admin</a>
+                <a href="https://pensive-almeida-53933d.netlify.app/">Website</a>
+                <a href="https://pensive-almeida-53933d.netlify.app/restaurants.html">Restaurants</a>
+                
             </div>
             <div class="navbar__right">
                 <a href="#">
@@ -36,11 +33,13 @@
             </div>
         </nav>
 
+
+        
         <!--Sidebar START-->
         <div id="sidebar">
             <div class="siderbar__title">
                 <div class="sidebar__img">
-
+                    
                     <p style="color:#e65061">Online Food Ordering System</p>
                 </div>
                 <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
@@ -52,10 +51,10 @@
                     <a href="#">Dashboard</a>
                 </div>
                 <h2>MANAGE</h2>
-
+                
                 <div class="sidebar__link">
-                    <i class="fa fa-cutlery" aria-hidden="true"></i>
-                    <a href="./food.html">Food Item Management</a>
+                    <i class="fa fa-user-circle"></i>
+                    <a href="./user.html">User Management</a>
                 </div>
 
                 <div class="sidebar__link">
@@ -64,13 +63,8 @@
                 </div>
 
                 <div class="sidebar__link">
-                    <i class="fa fa-money" aria-hidden="true"></i>
-                    <a href="./pay.html">Payment Management</a>
-                </div>
-
-                <div class="sidebar__link">
-                    <i class="fa fa-car" aria-hidden="true"></i>
-                    <a href="./delivery.html">Delivery Management</a>
+                    <i class="fa fa-user"></i>
+                    <a href="#">Manage Feedbacks</a>
                 </div>
 
                 <div class="sidebar__logout">
@@ -80,9 +74,8 @@
             </div>
         </div>
 
-        {% block mycontent %}
+        {% block admincontent %}
         {% endblock %}
     </div>
-    </body>
-    </html>
-    <!--SideBar ENDS-->
+</body>
+</html>
