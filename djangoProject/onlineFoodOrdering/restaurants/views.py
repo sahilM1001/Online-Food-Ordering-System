@@ -5,7 +5,7 @@ from django.template import loader
 
 #restaurant Page Views START HERE
 def restaurantHomePageView(request):
-    return HttpResponse("Welcome to Restaurant Home")
+    return render(request, 'restaurants/trailSetup2.html')
 
 def restaurantFoodItemPageView(request):
     return HttpResponse("Welcome to restaurant food items Management")
