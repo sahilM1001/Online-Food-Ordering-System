@@ -6,7 +6,7 @@ from django.template import loader
 
 #User Page Views START HERE
 def userHomePageView(request):
-    return HttpResponse("Welcome to User Home")
+    return render(request, 'users/trialSetup3.html')
 
 def userCartPageView(request):
     return HttpResponse("Welcome to User cart Management")
