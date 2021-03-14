@@ -1,8 +1,17 @@
-body {
+body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
+}
+
+.heading {
+    position: absolute; 
+    top: 0px; 
+    left: 600px; 
+    z-index: 22; 
+    color: #E52B50; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container { 
@@ -11,93 +20,50 @@ body {
     border: 1px solid #E52B50;
     border-radius: 15px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.leftContainer {
-    height: 400px;
-    width: 400px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #E52B50;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    text-align: center;
 }
 
-.leftContainer h1{
+.row {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    margin: 50px 5px 0px 20px;
-    font-weight: 600;
-}
-
-.leftContainer img {
-    margin-top: 35px;
-    width: 300px;
-    border-radius: 15px;
-}
-
-.rightContainer {
-
-    height: 400px;
-    width: 400px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-     
-}
-
-.rightContainer h1{
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #E52B50;
-    margin: 50px 5px 0px 20px;
-    font-weight: 600;
-}
-
-.formInputRows {
-    padding-left: 8px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #E52B50;
-    width: 360px;
     margin: 10px 10px;
+    height: 50px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.formRow{
-    margin-top: 30px;
+.row label {
+    color: white;
+}
+.row input {
+    width: 450px;
+    border: 1px solid red;
+    outline: none;
+    border-radius: 10px;
+    height: 30px;
 }
 
-.formRow label {
-    margin-left: 15px;
-    margin-bottom: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #E52B50;
-
+.lastRow {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 10px 10px;
+    border: 1px solid #E52B50;
 }
-.loginBtn {
-    margin-top: 20px;
-    margin-left: 130px;
-    margin-bottom: 20px;
 
+.lastRow button {
     height: 35px;
     width: 150px;
-
-    background-color: #E52B50;
-    color: white;
-    border: none;
     border-radius: 15px;
-}
+    border: none;
 
-a {
-    
     color: #E52B50;
-    text-decoration: none;
-    margin-left: 180px;
-    height: 35px;
-    font-size: large;
-    
-    
+    background-color: white ;
+    cursor: pointer;
+
 }
