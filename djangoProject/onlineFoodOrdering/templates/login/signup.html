@@ -2,47 +2,49 @@
 <!DOCTYPE>
 <html>
     <head>
-        <title>Login</title>
-        <link rel="stylesheet" href="{% static 'login/signupStyles.css'%}">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="{% static 'login/signUpStyles.css'%}">
     </head>
 
     <body>
-        <div class="container">
-            <div class="leftContainer">
-                <h1>
-                    Welcome to Food-O-City
-                </h1>
+        <h1 class="heading">
+            Signup Today 
+        </h1>
 
-                <div>
-                    <img src="../../static/images/foodocity.PNG">
+        
+            <div class="container">
+            <form action="">
+                <div class="row">
+                    <label for="">Email ID</label>
+                    <input type="text" required>
                 </div>
+
+                <div class="row">
+                    <label for="">User Name</label>
+                    <input type="text" required pattern="[A-Zaz]">
+                </div>
+
+                <div class="row">
+                    <label for="">Mobile Number</label>
+                    <input type="text" required maxlength="10">
+                </div>
+
+                <div class="row">
+                    <label for="">Address</label>
+                    <input type="text" required maxlength="150">
+                </div>
+
+                <div class="row">
+                    <label for="">Password</label>
+                    <input type="password" required minlength="6" maxlength="10">
+                </div>
+
+                <div class="lastRow">
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
             </div>
-
-            <div class="rightContainer">
-                <h1>
-                    Signup Today 
-                </h1>
-
-                <form action="">
-                    <div class="formRow">
-                        <label>Email Id</label>
-                        <input type="text" placeholder="User Name or Email" class="formInputRows">
-                    </div>
-                    <div class="formRow">
-                        <label>Password</label>
-                        <input type="password" placeholder="Enter Password" class="formInputRows">
-                    </div>
-
-                    <div class="formRow">
-                        <button type="submit" class="loginBtn">Log In</button>
-                    </div>
-
-                    <div>
-                        <a href="{}">Sign Up</a>
-                    </div>
-                </form>
-            </div>
-            
-        </div>
+        
+        
     </body>
 </html>
