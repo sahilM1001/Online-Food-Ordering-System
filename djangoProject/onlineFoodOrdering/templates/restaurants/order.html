@@ -1,4 +1,4 @@
- {% extends 'restaurants/restaurantMaster.html' %}
+{% extends 'restaurants/restaurantMaster.html' %}
 {% load static %}
 
 {% block mycontent %} 
@@ -34,92 +34,18 @@
                     </div>
                 </div>
 
-                <div class="main__cards" style="display: flex; align-item: center;justify-content: space-between;">
-                   
-                    <div class="cards">
-                        <i class="fa fa-bomb fa-2x text-lightblue"></i>
-                        <div class="cards__inner">
-                            <p class="text-primary-p">Total Orders</p>
-                            <span class="font-bold text-title">651</span>
-                        </div>
-                    </div>
-
-                    <div class="cards">
-                        <i class="fa fa-money fa-2x text-red"></i>
-                        <div class="cards__inner">
-                            <p class="text-primary-p">New Orders</p>
-                            <span class="font-bold text-title">15</span>
-                        </div>
-                    </div>
-
-                    <div class="cards">
-                        <i class="fa fa-anchor fa-2x "></i>
-                        <div class="cards__inner">
-                            <p class="text-primary-p">Cancelled Orders</p>
-                            <span class="font-bold text-title">10</span>
-                        </div>
-                    </div>
-
-                    <div class="cards">
-                        <i class="fa fa-percent fa-2x t"></i>
-                        <div class="cards__inner">
-                            <p class="text-primary-p">Profit % </p>
-                            <span class="font-bold text-title">25</span>
-                        </div>
-                    </div>
                 
-                </div>
+
 
                 <div class="charts_user">
 
-                    <div class="charts__left">
-                        <div class="charts__left__title">
-                            <div>
-                                <h1>Daily Reports</h1>
-                                <p>Ahmedabad, Gujarat, India</p>
-                            </div>
-                            <i class="fa fa-inr"></i>
-                        </div>
-                        <div id="apex1"></div>
-                    </div>
+                    
 
                     <br>
                     <br>
                     
 
-                    <div class="charts__right">
-                        <div class="charts__right__title">
-                            <div>
-                                <h1>Order Segmentation</h1>
-                                <p>For Ahmedabad, Gujarat, India</p>
-                            </div>
-                            <i class="fa fa-inr"></i>
-                        </div>
-                        
-                        <div class="charts__right__cards">
-                           
-                            <div class="card1">
-                                <h1>Total Orders</h1>
-                                <p>100</p>
-                            </div>
-
-                            <div class="card2">
-                                <h1>Processing</h1>
-                                <p>15</p>
-                            </div>
-
-                            <div class="card3">
-                                <h1>Out For Delivery</h1>
-                                <p>25</p>
-                            </div>
-
-                            <div class="card4">
-                                <h1>Cancelled Orders</h1>
-                                <p>10</p>
-                            </div>
-                        
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <br><br>
@@ -144,6 +70,7 @@
                                 <th>Payment ID</th>
                                 <th>Price</th>
                                 <th>Receipts</th>
+                                <th>Take Action</th>
                                 
                               </tr>
                             </thead>
@@ -157,6 +84,7 @@
                                 <td class="tg-0lax">151021</td>
                                 <td class="tg-0lax">570</td>
                                 <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
+                                <td class="tg-0lax"><a href=""> Accept</a> | <a href=""> Reject</a></td>
                                
                                 
                               </tr>
@@ -169,7 +97,7 @@
                                 <td class="tg-0lax">151022</td>
                                 <td class="tg-0lax">210</td>
                                 <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
-                                
+                                <td class="tg-0lax"><a href=""> Accept</a> | <a href=""> Reject</a></td>
                                 
                               </tr>
                               <tr class="table_row">
@@ -181,7 +109,7 @@
                                 <td class="tg-0lax">151023</td>
                                 <td class="tg-0lax">150</td>
                                 <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
-                                
+                                <td class="tg-0lax"><a href=""> Accept</a> | <a href=""> Reject</a></td>
                                 
                               </tr>
                             </tbody>
