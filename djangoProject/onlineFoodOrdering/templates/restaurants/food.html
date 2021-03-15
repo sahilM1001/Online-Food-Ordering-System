@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
-    <title>Food Item Management</title>
-</head>
-<body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="nav_icon" onclick="toggleSidebar()">
-                <i class="fa fa-bars"></i>
-            </div>
-            <div class="navbar__left">
-                <a href="../../AdminSide/Admin Panel/index.html">Admin</a>
-                <a href="../../foodocity/foodocity/index.html">Website</a>
-                <a class="active_link" href="./index.html">Restaurants</a>
-                
-            </div>
-            <div class="navbar__right">
-                <a href="#">
-                    <i class="fa fa-search"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-clock-o"></i>
-                </a>
-                <a href="#">
-                    <img width="30" src="assets/avatar.svg" alt="Avatar image">
-                </a>
-            </div>
-        </nav>
+{% extends 'restaurants/restaurantMaster.html' %}
+{% load static %}
+
+{% block mycontent %}
         <main>
             <div class="main__container">
                 <div class="main__title">
@@ -42,43 +12,8 @@
                     </div>
                 </div>
 
-                <div class="main__cards">
-                   
-                    <div class="cards">
-                        <i class="fa fa-cutlery fa-2x text-red" aria-hidden="true"></i>
-                        <div class="cards__inner">
-                            <p class="text-primary-p">Total Food Categories</p>
-                            <span class="font-bold text-title">4</span>
-                        </div>
-                    </div>
-
-                    <div class="cards">
-                        <i class="fa fa-lemon-o fa-2x text-lightblue"></i>
-                        <div class="cards__inner">
-                            <p class="text-primary-p">Total Food Items</p>
-                            <span class="font-bold text-title">85</span>
-                        </div>
-                    </div>
-
-                    <div class="cards">
-                        <i class="fa fa-anchor fa-2x "></i>
-                        <div class="cards__inner">
-                            <p class="text-primary-p">New Food Categories</p>
-                            <span class="font-bold text-title">1</span>
-                        </div>
-                    </div>
-
-                    <div class="cards">
-                        <i class="fa fa-plus-circle fa-2x t"></i>
-                        <div class="cards__inner">
-                            <p class="text-primary-p">New Food Items </p>
-                            <span class="font-bold text-title">5</span>
-                        </div>
-                    </div>
                 
-                </div>
-
-                <div class="charts_food">
+                <div class="charts_food" style="margin-top: 50px">
 
                     <div class="charts__left">
                         <div class="charts__left__title">
@@ -222,53 +157,8 @@
                 <!--User Table Part END-->
             </div>
         </main>
-        <!--SideBar START-->
-        <div id="sidebar">
-            <div class="siderbar__title">
-                <div class="sidebar__img">
-                    
-                    <p style="color:#e65061">Online Food Ordering System</p>
-                </div>
-                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
-            </div>
-
-            <div class="sidebar__menu">
-                <div class="sidebar__link">
-                    <i class="fa fa-home"></i>
-                    <a href="./index.html">Dashboard</a>
-                </div>
-                <h2>MANAGE</h2>
-                
-                <div class="sidebar__link">
-                    <i class="fa fa-cutlery" aria-hidden="true"></i>
-                    <a href="./food.html">Food Item Management</a>
-                </div>
-
-                <div class="sidebar__link">
-                    <i class="fa fa-rocket"></i>
-                    <a href="./order.html">Orders Management</a>
-                </div>
-
-                <div class="sidebar__link">
-                    <i class="fa fa-money" aria-hidden="true"></i>
-                    <a href="./pay.html">Payment Management</a>
-                </div>
-
-                <div class="sidebar__link">
-                    <i class="fa fa-car" aria-hidden="true"></i> 
-                    <a href="./delivery.html">Delivery Management</a>
-                </div> 
-
-                <div class="sidebar__logout">
-                    <i class="fa fa-power-off"></i>
-                    <a href="./logout.html"> Logout</a>
-                </div>
-            </div>
-        </div>
-        <!--SideBar END-->
-    </div>
+        
     <!--Apex Charts cdn-->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="script.js"></script>
-</body>
-</html>
+{%endblock%}

@@ -629,5 +629,11 @@ td{
     border: none;
 }
 
+.formInputs .formLabel {
+    width: 150px;
+    border: 2px solid red;
+}
+
 /*Forms CSS ENDS HERE*/
 /*END*/
+
