@@ -15,7 +15,7 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="{% static 'users/style.css'%}">
 
 	<!-- Cusom css -->
    <link rel="stylesheet" href="css/custom.css">
@@ -74,3 +74,9 @@
                                 
                             </div>
                         </div>
+
+         {% block usercontent %}
+        {% endblock %}
+    </div>
+</body>
+</html>

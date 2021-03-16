@@ -6,16 +6,21 @@ from django.template import loader
 
 #User Page Views START HERE
 def userHomePageView(request):
-    return render(request, 'users/trialSetup3.html')
+    return render(request, 'users/userMaster.html')
+
+def UserhomeMGTPageView(request):
+    return render(request, 'users/index.html')    
 
 def userCartPageView(request):
-    return HttpResponse("Welcome to User cart Management")
+    return render(request, 'users/cart.html')
 
-def userOrderMGTPageView(request):
-    return HttpResponse("Welcome to user Orders page")
+def userCheckoutPageView(request):
+    return render(request, 'users/checkout.html')
 
 def userAboutUsPageView(request):
-    return HttpResponse("Welcome to user About Us page")
+    return render(request, 'users/about-us.html')
 
+def userMenuGridPageView(request):
+    return render(request, 'users/menu-grid.html')
 #User Page Views END HERE
 
