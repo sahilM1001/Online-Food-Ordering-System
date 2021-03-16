@@ -725,13 +725,13 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--17 {
-  background-image: url(images/menu-grid/food1.jpg);
+  background-image: url(../../static/user/images/menu-grid/food1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .bg-image--18 {
-  background-image: url(images/cart/cart.jpg);
+  background-image: url(../../static/user/images/cart/cart.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; }
@@ -743,13 +743,13 @@ a#scrollUp {
   background-position: center center; }
 
 .bg-image--20 {
-  background-image: url(images/about/s-o-c-i-a-l-c-u-t-mqm2iZcYci4-unsplash.jpg);
+  background-image: url(../../static/user/images/about/s-o-c-i-a-l-c-u-t-mqm2iZcYci4-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .bg-image--21 {
-  background-image: url(images/about/b3.jpg);
+  background-image: url(../../static/user/images/about/b3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
@@ -6024,7 +6024,7 @@ div.slide__pizza img {
   margin-top: 50px; }
 
 .acc-header h5 a::after {
-  content: "\f19c";
+  content: "";
   font-family: Material-Design-Iconic-Font;
   position: absolute;
   right: 0;
