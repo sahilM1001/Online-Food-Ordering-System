@@ -3,8 +3,13 @@ from . import views
 
 urlpatterns=[
     path('', views.userHomePageView, name='Home'),
-    path('/view-index', views.UserhomeMGTPageView, name='index'),
+    path('/index', views.UserhomeMGTPageView, name='index'),
     path('/cart', views.userCartPageView, name='cart'),
-    path('/view-aboutUs', views.userAboutUsPageView, name='About-Us'),
+    path('/about', views.userAboutUsPageView, name='About-Us'),
+    path('/checkout', views.userCheckoutPageView, name='checkout'),
+    path('/menu', views.userMenuGridPageView, name='menu-grid'),
+    path('/contact', views.usercontactPageView, name='contact'),
+    path('/service', views.userservicePageView, name='service'),
+    path('/gallery', views.usergalleryPageView, name='gallery'),
 
 ]

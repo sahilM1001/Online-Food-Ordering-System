@@ -22,5 +22,14 @@ def userAboutUsPageView(request):
 
 def userMenuGridPageView(request):
     return render(request, 'users/menu-grid.html')
+
+def usercontactPageView(request):
+    return render(request, 'users/contact.html')
+
+def userservicePageView(request):
+    return render(request, 'users/service.html')
+
+def usergalleryPageView(request):
+    return render(request, 'users/gallery.html')
 #User Page Views END HERE
 
