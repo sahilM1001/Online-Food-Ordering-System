@@ -15,7 +15,7 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="{% static 'users/style.css'%}">
 
 	<!-- Cusom css -->
    <link rel="stylesheet" href="css/custom.css">
@@ -51,26 +51,32 @@
                             <div class="main__menu__wrap">
                                 <nav class="main__menu__nav d-none d-lg-block">
                                     <ul class="mainmenu">
-                                        <li class="drop"><a href="index.html">Home</a>
+                                        <li class="drop"><a href="user/index">Home</a>
                                             
                                         </li>
-                                        <li><a href="about-us.html">About</a></li>
-                                        <li class="drop"><a href="menu-grid.html">Menu</a>
+                                        <li><a href="user/about">About</a></li>
+                                        <li class="drop"><a href="user/menu-grid">Menu</a>
                                             
                                         </li>
-                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="user/gallery">Gallery</a></li>
                                         
                                         <li class="drop"><a href="#">Pages</a>
                                             <ul class="dropdown__menu">
-                                                <li><a href="service.html">Service</a></li>
-                                                <li><a href="cart.html">Cart Page</a></li>
-                                                <li><a href="checkout.html">Checkout Page</a></li>
+                                                <li><a href="user/service">Service</a></li>
+                                                <li><a href="user/cart">Cart Page</a></li>
+                                                <li><a href="user/checkout">Checkout Page</a></li>
                                         
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="user/contact">Contact</a></li>
                                     </ul>
                                 </nav>
                                 
                             </div>
                         </div>
+
+         {% block usercontent %}
+        {% endblock %}
+    </div>
+</body>
+</html>
