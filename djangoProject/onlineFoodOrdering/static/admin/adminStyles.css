@@ -392,6 +392,199 @@ main {
     position: absolute;
 }
 
+/*Table CSS START*/
+.table_container {
+    font-family: 'Lato', sans-serif;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 5px 13px #ededed
+                -5px -5px -5px 13px #ffffff;
+    
+}
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tg td {
+    border-color: goldenrod;
+    border-style: solid;
+    border-width:2px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg th{ 
+    border-color: goldenrod;
+    border-style: solid;
+    border-width:2px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-0lax{
+    text-align:center;
+    width: 50px;
+    text-overflow: ellipsis;
+
+    vertical-align:top
+}
+
+
+.table_title {
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table_title > div > h1 {
+    font-size: 24px;
+    color: #2e4a66;
+    margin-bottom: 5px;
+}
+
+.table_title > div > p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a5aaad;
+    margin-bottom: 5px;
+}
+
+.table_header {
+    background-color: #e65061;
+}
+
+.table_row {
+    background: #fff;
+    border-color: #a98921;
+}
+.table_row:hover {
+    background-color: #3ea175 ;
+}
+
+/*Table CSS END*/
+
+/*Receipt.html START*/
+.orderC{
+    padding-top: 100px;
+    text-align: center;
+  }
+/*Receipt.html END*/
+
+.charts__left {
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 5px 13px #ededed
+                -5px -5px -5px 13px #ffffff;
+}
+
+.charts__left__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.charts__left__title > div > h1 {
+    font-size: 24px;
+    color: #2e4a66;
+    margin-bottom: 5px;
+}
+
+
+.charts__left__title > i {
+    color: #ffffff;
+    font-size: 20px;
+    background: #ffc100;
+    border-radius: 200px 0px 200px 200px;
+    -moz-border-radius: 200px 0px 200px 200px;
+    -webkit-border-radius: 200px 0px 200px 200px;
+    border: 0px solid #000000;
+    padding: 15px;
+}
+
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #100444;
+    border-radius:12px;
+    padding: 8px 30px;
+    font-size: 16px;
+    transition-duration: 0.5s;
+  }
+
+.button1:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button1:hover{
+    background-color: #1f0a41;
+    color: white;
+}
+
+/*Forms CSS STARTS HERE*/
+#addForms {
+    width: 500px;
+}
+.formInputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.formInputs i{
+    margin-right: 50px;
+}
+
+/*.formInputs input {
+    height: 30px;
+    width: 90%;
+    padding-left: 15px;
+    line-height: 25px;
+    border-radius: 10px;
+    border: 1px solid #38e1b0;
+    outline: none;
+}*/
+
+.user-input {
+    height: 30px;
+    width: 90%;
+    padding-left: 15px;
+    line-height: 25px;
+    border-radius: 10px;
+    border: 1px solid #38e1b0;
+    outline: none;
+}
+
+.formInputs input[type="button"] {
+    padding: 10px 10px 10px 10px;
+    height: 50px;
+    margin-right: 120px;
+    width: 100px;
+    background-color: #3b9668;   
+    border: none;
+}
+
+.formInputs .formLabel {
+    width: 150px;
+    border: 2px solid red;
+}
+
+/*Forms CSS ENDS HERE*/
+/*END*/
+
 @media only screen and (max-width: 978px) {
     .container {
         grid-template-columns: 1fr;
@@ -480,90 +673,3 @@ main {
     opacity: 0.75;
 }
 
-/*Table CSS START*/
-.table_container {
-    font-family: 'Lato', sans-serif;
-    padding: 25px;
-    border-radius: 5px;
-    background: #ffffff;
-    box-shadow: 5px 5px 5px 13px #ededed
-                -5px -5px -5px 13px #ffffff;
-    
-}
-
-.tg  {
-    border-collapse:collapse;
-    border-spacing:0;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.tg td {
-    border-color: goldenrod;
-    border-style: solid;
-    border-width:2px;
-    font-family:Arial, sans-serif;
-    font-size:14px;
-    overflow:hidden;
-    padding:10px 5px;
-    word-break:normal;
-}
-.tg th{ 
-    border-color: goldenrod;
-    border-style: solid;
-    border-width:2px;
-    font-family:Arial, sans-serif;
-    font-size:14px;
-    font-weight:normal;
-    overflow:hidden;
-    padding:10px 5px;
-    word-break:normal;
-}
-.tg .tg-0lax{
-    text-align:center;
-    width: 50px;
-    text-overflow: ellipsis;
-
-    vertical-align:top
-}
-
-
-.table_title {
-    display: inline;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.table_title > div > h1 {
-    font-size: 24px;
-    color: #2e4a66;
-    margin-bottom: 5px;
-}
-
-.table_title > div > p {
-    font-size: 14px;
-    font-weight: 700;
-    color: #a5aaad;
-    margin-bottom: 5px;
-}
-
-.table_header {
-    background-color: #e65061;
-}
-
-.table_row {
-    background: #fff;
-    border-color: #a98921;
-}
-.table_row:hover {
-    background-color: #3ea175 ;
-}
-
-/*Table CSS END*/
-
-/*Receipt.html START*/
-.orderC{
-    padding-top: 100px;
-    text-align: center;
-  }
-/*Receipt.html END*/
