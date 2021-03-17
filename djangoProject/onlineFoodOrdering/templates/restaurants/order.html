@@ -59,59 +59,27 @@
                             </div>
                         <hr>
                         <br>
-                        <table class="tg">
+                              <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
-                                <th>Order ID</th>
+                                <th>Order  Detail ID </th>
+                                <th>Order ID </th>
                                 <th>Order Status</th>
-                                <th>User_ID</th>
-                                <th>Quantity</th>
-                                <th>Items</th>
+                                <th>Order Quantity</th>
+                                <th>Food ID</th>
                                 <th>Payment ID</th>
-                                <th>Price</th>
-                                <th>Receipts</th>
-                                <th>Take Action</th>
-                                
                               </tr>
                             </thead>
-                            <tbody>
+                            {% for i in order %}
                               <tr class="table_row">
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">Delivered</td>
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">4</td>
-                                <td class="tg-0lax">Paneer, Biryani</td>
-                                <td class="tg-0lax">151021</td>
-                                <td class="tg-0lax">570</td>
-                                <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
-                                <td class="tg-0lax"><a href=""> Accept</a> | <a href=""> Reject</a></td>
-                               
-                                
+                              <td class="tg-0lax">{{i.0}}</td>
+                              <td class="tg-0lax">{{i.1}}</td>
+                              <td class="tg-0lax">{{i.2}}</td>
+                              <td class="tg-0lax">{{i.3}}</td>
+                              <td class="tg-0lax">{{i.4}}</td>
+                              <td class="tg-0lax">{{i.5}}</td>
                               </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">102</td>
-                                <td class="tg-0lax">Out For Delivery</td>
-                                <td class="tg-0lax">105</td>
-                                <td class="tg-0lax">2</td>
-                                <td class="tg-0lax">Burger, French Fries</td>
-                                <td class="tg-0lax">151022</td>
-                                <td class="tg-0lax">210</td>
-                                <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
-                                <td class="tg-0lax"><a href=""> Accept</a> | <a href=""> Reject</a></td>
-                                
-                              </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">103</td>
-                                <td class="tg-0lax">Preparing</td>
-                                <td class="tg-0lax">109</td>
-                                <td class="tg-0lax">1</td>
-                                <td class="tg-0lax">Noodles</td>
-                                <td class="tg-0lax">151023</td>
-                                <td class="tg-0lax">150</td>
-                                <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
-                                <td class="tg-0lax"><a href=""> Accept</a> | <a href=""> Reject</a></td>
-                                
-                              </tr>
+                            {% endfor %}
                             </tbody>
                             </table>
                     </div>

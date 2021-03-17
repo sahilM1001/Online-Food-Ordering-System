@@ -66,60 +66,29 @@
                             </div>
                         <hr>
                         <br>
-                        <table class="tg">
+                              <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
-                                <th>User ID</th>
-                                <th>Type ID</th>
-                                <th>User Name</th>
-                                <th>Mobile Number</th>
-                                <th>Email Address</th>
+                                <th>User ID </th>
+                                <th>Type ID </th>
+                                <th>Name</th>
+                                <th>Mobile no.</th>
+                                <th>email </th>
                                 <th>Address</th>
-                                <th>Date Of Birth</th>
-                                
+                                <th>DOB</th>
                               </tr>
                             </thead>
-                            <tbody>
+                            {% for i in userDetails %}
                               <tr class="table_row">
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">2</td>
-                                <td class="tg-0lax">Sahil</td>
-                                <td class="tg-0lax">99749*****</td>
-                                <td class="tg-0lax">sahilmansuri@xyz.com</td>
-                                <td class="tg-0lax">A/201 Ajwad</td>
-                                <td class="tg-0lax">10/01/2001</td>
-                                
+                              <td class="tg-0lax">{{i.0}}</td>
+                              <td class="tg-0lax">{{i.1}}</td>
+                              <td class="tg-0lax">{{i.2}}</td>
+                              <td class="tg-0lax">{{i.3}}</td>
+                              <td class="tg-0lax">{{i.4}}</td>
+                              <td class="tg-0lax">{{i.5}}</td>
+                              <td class="tg-0lax">{{i.6}}</td>
                               </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">102</td>
-                                <td class="tg-0lax">3</td>
-                                <td class="tg-0lax">McDonalds</td>
-                                <td class="tg-0lax">079-2526***</td>
-                                <td class="tg-0lax">mcd@xyz.com</td>
-                                <td class="tg-0lax">GF, Wide Angle Cinemas </td>
-                                <td class="tg-0lax">01/01/2014</td>
-                                
-                              </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">103</td>
-                                <td class="tg-0lax">1</td>
-                                <td class="tg-0lax">Admin</td>
-                                <td class="tg-0lax">98254****</td>
-                                <td class="tg-0lax">admin@food.com</td>
-                                <td class="tg-0lax">1011, Emaar Heights</td>
-                                <td class="tg-0lax">20/04/1990</td>
-                                
-                              </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">104</td>
-                                <td class="tg-0lax">2</td>
-                                <td class="tg-0lax">Ashley</td>
-                                <td class="tg-0lax">110-7854****</td>
-                                <td class="tg-0lax">ash@xyz.com</td>
-                                <td class="tg-0lax">24, Classic Villas</td>
-                                <td class="tg-0lax">01/06/1995</td>
-                                
-                              </tr>
+                            {% endfor %}
                             </tbody>
                             </table>
                     </div>

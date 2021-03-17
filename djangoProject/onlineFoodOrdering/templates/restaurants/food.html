@@ -28,28 +28,26 @@
                         <div class="food">
                             <form id="addForm">
                                 <div class="formInputs">
+                                {% csrf_token %}
                                     <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
-                                    <input type="number" class="user-input" placeholder="Food Item ID" maxlength="10"/>
-                                </div>
-                                
-                                <div class="formInputs">
-                                    <i class="fa fa-lemon-o fa-2x" aria-hidden="true"></i>
-                                    <input type="text" class="user-input" placeholder="Food Item Name" minlength="5" maxlength="25"/>
+                                    <input name="txt1" type="number" class="user-input" placeholder="Food Item ID" maxlength="10"/>
                                 </div>
 
                                 <div class="formInputs">
                                     <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
-                                    <input type="text" class="user-input" placeholder="Food Item Category" />
+                                    <input name="txt2" type="text" class="user-input" placeholder="Food Item Category" />
+                                </div>
+
+                                 <div class="formInputs">
+                                    <i class="fa fa-lemon-o fa-2x" aria-hidden="true"></i>
+                                    <input name="txt3" type="text" class="user-input" placeholder="Food Item Name" minlength="5" maxlength="25"/>
                                 </div>
 
                                 <div class="formInputs">
                                     <i class="fa fa-inr fa-2x" aria-hidden="true"></i>
-                                    
-                                    <input type="number" class="user-input" placeholder="Food Item Price" style="margin-left: 10px;"/>
+                                    <input name="txt4" type="number" class="user-input" placeholder="Food Item Price" style="margin-left: 10px;"/>
                                 </div>
                             </form>
-                            
-                            <div class="formInputs">
                                 <input type="button" class="button1" value="ADD" />             
                                 <input type="button" class="button1" value="UPDATE" />
                             </div>
@@ -112,44 +110,23 @@
                             </div>
                         <hr>
                         <br>
-                        <table class="tg">
+                              <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
-                                <th>F_ID</th>
-                                <th>F_category_ID</th>
-                                <th>F_Name</th>
-                                <th>F_Price</th>
+                                <th>Food Id </th>
+                                <th>Food Category</th>
+                                <th>Food Name</th>
+                                <th>Food Price</th>
                               </tr>
                             </thead>
-
-                            <tbody>
-
+                            {% for i in food %}
                               <tr class="table_row">
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">01</td>
-                                <td class="tg-0lax">Paneer Chilli</td>
-                                <td class="tg-0lax">180</td>   
+                              <td class="tg-0lax">{{i.0}}</td>
+                              <td class="tg-0lax">{{i.1}}</td>
+                              <td class="tg-0lax">{{i.2}}</td>
+                              <td class="tg-0lax">{{i.3}}</td>
                               </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">201</td>
-                                <td class="tg-0lax">02</td>
-                                <td class="tg-0lax">French Fries</td>
-                                <td class="tg-0lax">80</td>
-                              </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">301</td>
-                                <td class="tg-0lax">03</td>
-                                <td class="tg-0lax">Masala Dosa</td>
-                                <td class="tg-0lax">120</td>
-                              </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">401</td>
-                                <td class="tg-0lax">04</td>
-                                <td class="tg-0lax">Dal-Rice Combo</td>
-                                <td class="tg-0lax">180</td>
-                              </tr>
+                            {% endfor %}
                             </tbody>
                             </table>
                     </div>
