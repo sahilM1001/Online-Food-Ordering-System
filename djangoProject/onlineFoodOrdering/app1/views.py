@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.template import loader
 
@@ -8,6 +8,11 @@ from django.template import loader
 
 ##cur = conn.cursor()
 # Create your views here.
+
+import mysql.connector as mcdb
+conn = mcdb.connect(host="localhost", user="root", passwd="", database='onlinefooddeliverysystem')
+print('Successfully connected to database')
+cur = conn.cursor()
 
 #Admin Page Views START HERE
 def adminhomePageView(request):
@@ -30,6 +35,13 @@ def adminFeedbackMGTPageView(request):
     ##print(list(data))
     
     return render(request, 'admin/feedback.html')
+
+def feedbacklisting(request):
+    cur.execute("SELECT * FROM `tbl_feedbacks`")
+    data = cur.fetchall()
+    #return list(data)
+    print(list(data))
+    return render(request, 'admin/feedback.html', {'feedback': data})
 
 #Admin Page Views END HERE
 

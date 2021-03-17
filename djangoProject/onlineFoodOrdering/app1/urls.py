@@ -6,5 +6,6 @@ urlpatterns=[
     path('/add-user', views.adminUserAddView, name='ADD User'),
     path('/view-users', views.adminUserMGTPageView, name='User Management'),
     path('/view-orders', views.adminOrderMGTPageView, name='Order Management'),
-    path('/view-feedbacks', views.adminFeedbackMGTPageView, name='Feedbacks Management'),
+    path('/view-feedbacks', views.feedbacklisting, name='Feedbacks Management'),
+
 ]
