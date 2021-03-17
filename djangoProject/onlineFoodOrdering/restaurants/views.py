@@ -10,6 +10,7 @@ def restaurantHomePageView(request):
 def restaurantFoodItemPageView(request):
     return render(request, 'restaurants/food.html')
 
+
 def restaurantOrderMGTPageView(request):
     return render(request, 'restaurants/order.html')
 

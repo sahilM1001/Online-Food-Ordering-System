@@ -5,7 +5,7 @@
        <main>
             <div class="main__container">
                 <div class="main__title">
-                    <img src="assets/hello.svg">
+                    <img src="{%static 'admin/images/hello.svg'%}">
                     <div class="main__greeting">
                         <h1>Hello Admin</h1>
                         <p>Welcome to Feedbacks</p>
@@ -35,12 +35,23 @@
                                 <th>Feedback Date</th>
                               </tr>
                             </thead>
+<<<<<<< HEAD
                             {% for i in feedback %}
                               <tr class="table_row">
                               <td class="tg-0lax">{{i.0}}</td>
                               <td class="tg-0lax">{{i.1}}</td>
                               <td class="tg-0lax">{{i.2}}</td>
                               <td class="tg-0lax">{{i.3}}</td>
+=======
+                            {% for i in feedbacks %}
+                            <tbody>
+                              <tr class="table_row">
+                                <td class="tg-0lax">{{i.0}}</td>
+                                <td class="tg-0lax">{{i.1}}</td>
+                                <td class="tg-0lax">{{i.2}}}</td>
+                                <td class="tg-0lax">{{i.3}}</td>
+                                
+>>>>>>> ad0ff993c35186aa103378607b7b41416044d990
                               </tr>
                             {% endfor %}
                     </div>
