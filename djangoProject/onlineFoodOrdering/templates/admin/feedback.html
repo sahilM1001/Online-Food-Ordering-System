@@ -24,41 +24,25 @@
                             </div>
                         <hr>
                         <br>
-                        <table class="tg">
-                            <thead class="table_header">
+                      
+                            <a href="/onlinefooddeliverysystem">View</a>
+                            <table border='1' class="tg">
+                            <thead class="thead">
                               <tr>
-                                <th>Feedback ID</th>
-                                <th>User ID</th>
+                                <th>Feedback ID </th>
+                                <th>User ID </th>
                                 <th>Feedback Details</th>
                                 <th>Feedback Date</th>
-                                
                               </tr>
                             </thead>
-                            <tbody>
+                            {% for i in feedback %}
                               <tr class="table_row">
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">102</td>
-                                <td class="tg-0lax">Excellent Quality food must try</td>
-                                <td class="tg-0lax">24/02/2021</td>
-                                
+                              <td class="tg-0lax">{{i.0}}</td>
+                              <td class="tg-0lax">{{i.1}}</td>
+                              <td class="tg-0lax">{{i.2}}</td>
+                              <td class="tg-0lax">{{i.3}}</td>
                               </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">102</td>
-                                <td class="tg-0lax">105</td>
-                                <td class="tg-0lax">The food quality was great, but there were some problems in the delivery</td>
-                                <td class="tg-0lax">01/01/2021</td>
-                            
-                              </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">103</td>
-                                <td class="tg-0lax">110</td>
-                                <td class="tg-0lax">Must try for everyone who is missing their homemade food in a new city.</td>
-                                <td class="tg-0lax">15/01/2021</td>
-                                
-                              </tr>
-                              
-                            </tbody>
-                            </table>
+                            {% endfor %}
                     </div>
                 </div>
                 <!--User Table Part END-->
