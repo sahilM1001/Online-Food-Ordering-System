@@ -31,37 +31,23 @@
                             </div>
                         <hr>
                         <br>
-                        <table class="tg">
+                              <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
-                                <th>Payment ID</th>
-                                <th>Order ID</th>
+                                <th>Payment Id </th>
+                                <th>Order ID </th>
                                 <th>Payment Mode</th>
-                                <th>Date</th>
+                                <th>Payment Date</th>
                               </tr>
                             </thead>
-                            <tbody>
+                            {% for i in payment %}
                               <tr class="table_row">
-                                <td class="tg-0lax">001</td>
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">Cash</td>
-                                <td class="tg-0lax">04-08-2020</td>
-                               </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">002</td>
-                                <td class="tg-0lax">102</td>
-                                <td class="tg-0lax">Online</td>
-                                <td class="tg-0lax">01-09-2020</td>
+                              <td class="tg-0lax">{{i.0}}</td>
+                              <td class="tg-0lax">{{i.1}}</td>
+                              <td class="tg-0lax">{{i.2}}</td>
+                              <td class="tg-0lax">{{i.3}}</td>
                               </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">003</td>
-                                <td class="tg-0lax">103</td>
-                                <td class="tg-0lax">Cash</td>
-                                <td class="tg-0lax">05-01-2021</td>
-                              </tr>
-
+                            {% endfor %}
                             </tbody>
                             </table>
                     </div>

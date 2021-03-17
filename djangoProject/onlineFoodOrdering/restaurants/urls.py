@@ -3,10 +3,12 @@ from . import views
 
 urlpatterns=[
     path('', views.restaurantHomePageView, name='Home'),
-    path('/view-food', views.restaurantFoodItemPageView, name='Food Item Management'),
-    path('/view-orders', views.restaurantOrderMGTPageView, name='Order Management'),
-    path('/view-delivery', views.restaurantDeliveryMGTPageView, name='Delivery Management'),
-    path('/view-feedback', views.restaurantFeedbackMGTPageView, name='Feedbacks Management'),
-    path('/view-payment', views.restaurantPaymentMGTPageView, name='Payments Management'),
+    path('/view-food', views.foodlisting, name='Food Item Management'),
+    path('/view-orders', views.orderlisting, name='Order Management'),
+    path('/view-delivery', views.deliverylisting, name='Delivery Management'),
+    path('/view-feedback', views.feedbacklisting, name='Feedbacks Management'),
+    path('/view-payment', views.paymentlisting, name='Payments Management'),
+
+     path('/add-food', views.foodaddprocess, name='Food Item Management'),
 
 ]

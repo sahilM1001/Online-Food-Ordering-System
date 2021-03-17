@@ -34,38 +34,23 @@
                             </div>
                         <hr>
                         <br>
-                        <table class="tg">
+                            <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
-                                <th>Delivery ID</th>
+                                <th>Delivery Id </th>
+                                <th>Order ID </th>
+                                <th>Delivery Address</th>
                                 <th>Delivery Status</th>
-                                <th>Address</th>
-                                <th>Order ID</th> 
                               </tr>
                             </thead>
-
-                            <tbody>
+                            {% for i in delivery %}
                               <tr class="table_row">
-                                <td class="tg-0lax">01</td>
-                                <td class="tg-0lax">Delivered</td>
-                                <td class="tg-0lax">13, 2nd floor Juhapura</td>
-                                <td class="tg-0lax">101</td>
+                              <td class="tg-0lax">{{i.0}}</td>
+                              <td class="tg-0lax">{{i.1}}</td>
+                              <td class="tg-0lax">{{i.2}}</td>
+                              <td class="tg-0lax">{{i.3}}</td>
                               </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">02</td>
-                                <td class="tg-0lax">Out For Delivery</td>
-                                <td class="tg-0lax">11, 4th floor, Rajbhoomi Aparts</td>
-                                <td class="tg-0lax">102</td>
-                             </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">03</td>
-                                <td class="tg-0lax">Preparing</td>
-                                <td class="tg-0lax">302, 3rd floor Sunny PG</td>
-                                <td class="tg-0lax">103</td>
-                             </tr>
-
+                            {% endfor %}
                             </tbody>
                             </table>
                     </div>
