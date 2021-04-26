@@ -43,5 +43,8 @@ def feedbacklisting(request):
     print(list(data))
     return render(request, 'admin/feedback.html', {'feedback': data})
 
+
+def adminLogout(request):
+    return render(request, 'admin/logout.html')
 #Admin Page Views END HERE
 

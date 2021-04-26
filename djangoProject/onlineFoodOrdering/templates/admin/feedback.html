@@ -25,9 +25,9 @@
                         <hr>
                         <br>
                       
-                            <a href="/onlinefooddeliverysystem">View</a>
+                            <!--<a href="/onlinefooddeliverysystem">View</a>-->
                             <table border='1' class="tg">
-                            <thead class="thead">
+                            <thead class="table_header">
                               <tr>
                                 <th>Feedback ID </th>
                                 <th>User ID </th>
@@ -35,14 +35,13 @@
                                 <th>Feedback Date</th>
                               </tr>
                             </thead>
-<<<<<<< HEAD
                             {% for i in feedback %}
                               <tr class="table_row">
                               <td class="tg-0lax">{{i.0}}</td>
                               <td class="tg-0lax">{{i.1}}</td>
                               <td class="tg-0lax">{{i.2}}</td>
                               <td class="tg-0lax">{{i.3}}</td>
-=======
+
                             {% for i in feedbacks %}
                             <tbody>
                               <tr class="table_row">
@@ -51,8 +50,8 @@
                                 <td class="tg-0lax">{{i.2}}}</td>
                                 <td class="tg-0lax">{{i.3}}</td>
                                 
->>>>>>> ad0ff993c35186aa103378607b7b41416044d990
                               </tr>
+                            {% endfor %}
                             {% endfor %}
                     </div>
                 </div>
