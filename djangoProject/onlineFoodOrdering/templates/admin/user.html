@@ -68,6 +68,30 @@
                         <br>
                               <table border='1' class="tg">
                             <thead class="table_header">
+<<<<<<< HEAD
+                                <tr>
+                                  <th>User ID</th>
+                                  <th>User Type</th>
+                                  <th>User Name</th>
+                                  <th>Mobile Number</th>
+                                  <th>Email ID</th>
+                                  <th>Address</th>
+                                  <th>Date Of Birth</th>
+                                  
+                                </tr>
+                              </thead>
+                            {% for user in users%}
+                            <tbody>
+                              <tr class="table_row">
+                                <td class="tg-0lax">{{user.0}}</td>
+                                <td class="tg-0lax">{{user.1}}</td>
+                                <td class="tg-0lax">{{user.2}}</td>
+                                <td class="tg-0lax">{{user.3}}</td>
+                                <td class="tg-0lax">{{user.4}}</td>
+                                <td class="tg-0lax">{{user.5}}</td>
+                                <td class="tg-0lax">{{user.6}}</td>
+                                
+=======
                               <tr>
                                 <th>User ID </th>
                                 <th>Type ID </th>
@@ -87,9 +111,11 @@
                               <td class="tg-0lax">{{i.4}}</td>
                               <td class="tg-0lax">{{i.5}}</td>
                               <td class="tg-0lax">{{i.6}}</td>
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
                               </tr>
                             {% endfor %}
                             </tbody>
+                            {% endfor %}
                             </table>
                     </div>
                 </div>

@@ -113,21 +113,38 @@
                               <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
+<<<<<<< HEAD
+                                <th>Food Item ID</th>
+                                <th>Food Category ID</th>
+=======
                                 <th>Food Id </th>
                                 <th>Food Category</th>
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
                                 <th>Food Name</th>
                                 <th>Food Price</th>
                               </tr>
                             </thead>
+<<<<<<< HEAD
+
+                            {% for item in items %}
+                            <tbody>
+                              <tr class="table_row">
+                                <td class="tg-0lax">{{item.0}}</td>
+                                <td class="tg-0lax">{{item.1}}</td>
+                                <td class="tg-0lax">{{item.2}}</td>
+                                <td class="tg-0lax">{{item.3}}</td>   
+=======
                             {% for i in food %}
                               <tr class="table_row">
                               <td class="tg-0lax">{{i.0}}</td>
                               <td class="tg-0lax">{{i.1}}</td>
                               <td class="tg-0lax">{{i.2}}</td>
                               <td class="tg-0lax">{{i.3}}</td>
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
                               </tr>
                             {% endfor %}
                             </tbody>
+                            {% endfor %}
                             </table>
                     </div>
                 </div>

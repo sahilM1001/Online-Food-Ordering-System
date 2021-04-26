@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 11, 2021 at 03:11 PM
+-- Generation Time: Apr 02, 2021 at 12:09 PM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- PHP Version: 7.3.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,6 +24,90 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Stand-in structure for view `delivery report`
+-- (See below for the actual view)
+--
+CREATE TABLE `delivery report` (
+`d_status` varchar(15)
+,`o_date` date
+,`d_address` text
+,`u_name` varchar(25)
+,`type_name` varchar(20)
+,`d_id` int(10)
+,`o_id` int(10)
+,`u_id` int(10)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `feedback reports`
+-- (See below for the actual view)
+--
+CREATE TABLE `feedback reports` (
+`u_id` int(10)
+,`fd_details` text
+,`fd_date` date
+,`u_name` varchar(25)
+,`u_email` varchar(25)
+,`fd_id` int(5)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `food items report`
+-- (See below for the actual view)
+--
+CREATE TABLE `food items report` (
+`f_id` int(10)
+,`f_name` varchar(25)
+,`f_price` int(5)
+,`category_name` varchar(15)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `orders report`
+-- (See below for the actual view)
+--
+CREATE TABLE `orders report` (
+`u_id` int(10)
+,`u_name` varchar(25)
+,`u_mobile_no` varchar(10)
+,`u_address` varchar(150)
+,`o_id` int(10)
+,`o_date` date
+,`o_amount` int(5)
+,`o_qty` int(5)
+,`f_name` varchar(25)
+,`f_price` int(5)
+,`pyt_mode` varchar(10)
+,`pyt_date` date
+);
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `payment reports`
+-- (See below for the actual view)
+--
+CREATE TABLE `payment reports` (
+`o_id` int(10)
+,`pyt_id` int(5)
+,`o_id1` int(10)
+,`pyt_mode` varchar(10)
+,`pyt_date` date
+,`u_name` varchar(25)
+,`u_mobile_no` varchar(10)
+,`o_date` date
+,`o_amount` int(5)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_category`
 --
 
@@ -38,9 +122,11 @@ CREATE TABLE `tbl_category` (
 
 INSERT INTO `tbl_category` (`category_id`, `category_name`) VALUES
 (102, 'Chinese'),
+(109, 'Continental'),
 (107, 'Desserts'),
 (106, 'Drinks'),
 (103, 'Italian'),
+(110, 'Mexican'),
 (101, 'Punjabi'),
 (105, 'Snacks'),
 (104, 'South Indian');
@@ -122,15 +208,15 @@ CREATE TABLE `tbl_food_items` (
 
 INSERT INTO `tbl_food_items` (`f_id`, `f_category_id`, `f_name`, `f_price`) VALUES
 (201, 101, 'Aloo Cheese Paratha', 90),
-(202, 104, 'Masore Masala Dosa', 130),
-(203, 102, 'Manchurian', 80),
+(202, 104, 'Mysore Masala Dosa', 120),
+(203, 102, 'Schezwan Fried Rice', 180),
 (204, 105, 'Vada pau', 25),
-(205, 106, 'Cold Coffee', 85),
+(205, 106, 'Guava Juice', 90),
 (206, 103, 'Double Cheese Pizza', 250),
 (207, 107, 'Choco Lava Cake', 120),
 (208, 103, 'White Pasta', 150),
 (209, 101, 'Paneer Bhurji Naan Combo', 210),
-(210, 102, 'Noodles', 70);
+(210, 102, 'Dal Rice Combo', 190);
 
 -- --------------------------------------------------------
 
@@ -154,14 +240,14 @@ CREATE TABLE `tbl_order_details` (
 INSERT INTO `tbl_order_details` (`o_detail_id`, `o_id`, `o_status`, `o_qty`, `f_id`, `pyt_id`) VALUES
 (501, 301, 'Delivered', 2, 201, 405),
 (502, 303, 'Delivered', 1, 206, 401),
-(503, 305, 'Not Delivered', 3, 204, 309),
+(503, 305, 'Not Delivered', 3, 204, 409),
 (504, 307, 'Delivered', 4, 205, 408),
 (505, 309, 'Not Delivered', 2, 210, 401),
 (506, 302, 'Not Delivered', 2, 202, 407),
-(507, 310, 'Not Delivered', 1, 208, 309),
+(507, 310, 'Not Delivered', 1, 208, 409),
 (508, 304, 'Delivered', 2, 207, 402),
 (509, 306, 'Delivered', 3, 204, 406),
-(510, 308, 'Delivered', 1, 203, 310);
+(510, 308, 'Delivered', 1, 203, 410);
 
 -- --------------------------------------------------------
 
@@ -210,8 +296,6 @@ CREATE TABLE `tbl_pyt` (
 --
 
 INSERT INTO `tbl_pyt` (`pyt_id`, `o_id`, `pyt_mode`, `pyt_date`) VALUES
-(309, 305, 'online', '2020-12-31'),
-(310, 308, 'Cod', '2021-01-16'),
 (401, 303, 'Cod', '2021-02-01'),
 (402, 309, 'online', '2021-02-09'),
 (403, 306, 'online', '2021-01-05'),
@@ -219,7 +303,9 @@ INSERT INTO `tbl_pyt` (`pyt_id`, `o_id`, `pyt_mode`, `pyt_date`) VALUES
 (405, 307, 'online', '2021-02-06'),
 (406, 310, 'online', '2021-01-31'),
 (407, 302, 'Cod', '2021-02-10'),
-(408, 304, 'Cod', '2021-01-14');
+(408, 304, 'Cod', '2021-01-14'),
+(409, 305, 'online', '2020-12-31'),
+(410, 308, 'Cod', '2021-01-16');
 
 -- --------------------------------------------------------
 
@@ -278,6 +364,51 @@ INSERT INTO `tbl_user_type` (`type_id`, `type_name`) VALUES
 (1, 'Admin'),
 (2, 'Restaurant'),
 (3, 'user');
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `delivery report`
+--
+DROP TABLE IF EXISTS `delivery report`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `delivery report`  AS SELECT `tbl_delivery`.`d_status` AS `d_status`, `tbl_order_master`.`o_date` AS `o_date`, `tbl_delivery`.`d_address` AS `d_address`, `tbl_user`.`u_name` AS `u_name`, `tbl_user_type`.`type_name` AS `type_name`, `tbl_delivery`.`d_id` AS `d_id`, `tbl_delivery`.`o_id` AS `o_id`, `tbl_user`.`u_id` AS `u_id` FROM (((`tbl_delivery` join `tbl_order_master` on(`tbl_order_master`.`o_id` = `tbl_delivery`.`o_id`)) join `tbl_user` on(`tbl_user`.`u_id` = `tbl_order_master`.`u_id`)) join `tbl_user_type` on(`tbl_user_type`.`type_id` = `tbl_user`.`type_id`)) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `feedback reports`
+--
+DROP TABLE IF EXISTS `feedback reports`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `feedback reports`  AS SELECT `tbl_feedbacks`.`u_id` AS `u_id`, `tbl_feedbacks`.`fd_details` AS `fd_details`, `tbl_feedbacks`.`fd_date` AS `fd_date`, `tbl_user`.`u_name` AS `u_name`, `tbl_user`.`u_email` AS `u_email`, `tbl_feedbacks`.`fd_id` AS `fd_id` FROM (`tbl_feedbacks` join `tbl_user` on(`tbl_user`.`u_id` = `tbl_feedbacks`.`u_id`)) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `food items report`
+--
+DROP TABLE IF EXISTS `food items report`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `food items report`  AS SELECT `tbl_food_items`.`f_id` AS `f_id`, `tbl_food_items`.`f_name` AS `f_name`, `tbl_food_items`.`f_price` AS `f_price`, `tbl_category`.`category_name` AS `category_name` FROM (`tbl_category` join `tbl_food_items` on(`tbl_category`.`category_id` = `tbl_food_items`.`f_category_id`)) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `orders report`
+--
+DROP TABLE IF EXISTS `orders report`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `orders report`  AS SELECT `tbl_user`.`u_id` AS `u_id`, `tbl_user`.`u_name` AS `u_name`, `tbl_user`.`u_mobile_no` AS `u_mobile_no`, `tbl_user`.`u_address` AS `u_address`, `tbl_order_master`.`o_id` AS `o_id`, `tbl_order_master`.`o_date` AS `o_date`, `tbl_order_master`.`o_amount` AS `o_amount`, `tbl_order_details`.`o_qty` AS `o_qty`, `tbl_food_items`.`f_name` AS `f_name`, `tbl_food_items`.`f_price` AS `f_price`, `tbl_pyt`.`pyt_mode` AS `pyt_mode`, `tbl_pyt`.`pyt_date` AS `pyt_date` FROM ((((`tbl_order_master` join `tbl_user` on(`tbl_user`.`u_id` = `tbl_order_master`.`u_id`)) join `tbl_order_details` on(`tbl_order_master`.`o_id` = `tbl_order_details`.`o_id`)) join `tbl_food_items` on(`tbl_food_items`.`f_id` = `tbl_order_details`.`f_id`)) join `tbl_pyt` on(`tbl_pyt`.`pyt_id` = `tbl_order_details`.`pyt_id`)) ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `payment reports`
+--
+DROP TABLE IF EXISTS `payment reports`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `payment reports`  AS SELECT `tbl_order_master`.`o_id` AS `o_id`, `tbl_pyt`.`pyt_id` AS `pyt_id`, `tbl_pyt`.`o_id` AS `o_id1`, `tbl_pyt`.`pyt_mode` AS `pyt_mode`, `tbl_pyt`.`pyt_date` AS `pyt_date`, `tbl_user`.`u_name` AS `u_name`, `tbl_user`.`u_mobile_no` AS `u_mobile_no`, `tbl_order_master`.`o_date` AS `o_date`, `tbl_order_master`.`o_amount` AS `o_amount` FROM ((`tbl_pyt` join `tbl_order_master` on(`tbl_order_master`.`o_id` = `tbl_pyt`.`o_id`)) join `tbl_user` on(`tbl_order_master`.`u_id` = `tbl_user`.`u_id`)) ;
 
 --
 -- Indexes for dumped tables
@@ -348,6 +479,28 @@ ALTER TABLE `tbl_user`
 --
 ALTER TABLE `tbl_user_type`
   ADD PRIMARY KEY (`type_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_delivery`
+--
+ALTER TABLE `tbl_delivery`
+  MODIFY `d_id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'This field will store Delivery ID', AUTO_INCREMENT=511;
+
+--
+-- AUTO_INCREMENT for table `tbl_feedbacks`
+--
+ALTER TABLE `tbl_feedbacks`
+  MODIFY `fd_id` int(5) NOT NULL AUTO_INCREMENT COMMENT 'This field will store Feedback ID', AUTO_INCREMENT=611;
+
+--
+-- AUTO_INCREMENT for table `tbl_order_details`
+--
+ALTER TABLE `tbl_order_details`
+  MODIFY `o_detail_id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'This field will store Order  Details ID', AUTO_INCREMENT=511;
 
 --
 -- Constraints for dumped tables

@@ -1,0 +1,26 @@
+Admin;
+Login
+CategoryManage
+OrderManage
+User View
+Vendor View 
+Payment VIew
+Feedback
+
+User:
+Signup
+Login
+ProductView
+AddtoCart
+View Cart
+Order Place 
+View Order
+Feedback
+Track Order
+
+Vendor
+------
+Food Items
+View Order
+View Payment
+Logout

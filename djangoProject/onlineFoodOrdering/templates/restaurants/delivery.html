@@ -37,6 +37,23 @@
                             <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
+<<<<<<< HEAD
+                                <th>Delivery ID</th>
+                                <th>Order ID</th>
+                                <th>Address</th>
+                                <th>Delivery Status</th> 
+                              </tr>
+                            </thead>
+
+                            {% for delivery in deliveries %}
+                            <tbody>
+                              <tr class="table_row">
+                                <td class="tg-0lax">{{delivery.0}}</td>
+                                <td class="tg-0lax">{{delivery.1}}</td>
+                                <td class="tg-0lax">{{delivery.2}}</td>
+                                <td class="tg-0lax">{{delivery.3}}</td>
+                              </tr>
+=======
                                 <th>Delivery Id </th>
                                 <th>Order ID </th>
                                 <th>Delivery Address</th>
@@ -51,7 +68,9 @@
                               <td class="tg-0lax">{{i.3}}</td>
                               </tr>
                             {% endfor %}
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
                             </tbody>
+                            {% endfor %}
                             </table>
                     </div>
                 </div>

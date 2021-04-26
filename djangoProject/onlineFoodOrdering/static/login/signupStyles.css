@@ -24,6 +24,8 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #E52B50;
+
+    box-shadow: 24px 18px 10px 0px goldenrod;
 }
 
 .row {

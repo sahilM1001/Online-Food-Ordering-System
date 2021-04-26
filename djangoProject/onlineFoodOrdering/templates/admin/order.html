@@ -68,6 +68,29 @@
                             <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
+<<<<<<< HEAD
+                                <th>Order Details ID</th>
+                                <th>Order ID</th>
+                                <th>Order Status</th>
+                                <th>Quantity</th>
+                                <th>Food Items</th>
+                                <th>Payment ID</th>
+                                <th>Receipts</th>
+                                
+                              </tr>
+                            </thead>
+                            {% for order in orders %}
+                            <tbody>
+                              <tr class="table_row">
+                                <td class="tg-0lax">{{order.0}}</td>
+                                <td class="tg-0lax">{{order.1}}</td>
+                                <td class="tg-0lax">{{order.2}}</td>
+                                <td class="tg-0lax">{{order.3}}</td>
+                                <td class="tg-0lax">{{order.4}}</td>
+                                <td class="tg-0lax">{{order.5}}</td>
+                                
+                                <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
+=======
                                 <th>Order Detail Id </th>
                                 <th>Order ID </th>
                                 <th>Order Status</th>
@@ -84,9 +107,11 @@
                               <td class="tg-0lax">{{i.3}}</td>
                               <td class="tg-0lax">{{i.4}}</td>
                               <td class="tg-0lax">{{i.5}}</td>
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
                               </tr>
                             {% endfor %}
                             </tbody>
+                            {% endfor %}
                             </table>
                     </div>
                 </div>

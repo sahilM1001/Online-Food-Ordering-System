@@ -40,6 +40,16 @@
                                 <th>Payment Date</th>
                               </tr>
                             </thead>
+<<<<<<< HEAD
+                            {% for payment in payments %}
+                            <tbody>
+                              <tr class="table_row">
+                                <td class="tg-0lax">{{payment.0}}</td>
+                                <td class="tg-0lax">{{payment.1}}</td>
+                                <td class="tg-0lax">{{payment.2}}</td>
+                                <td class="tg-0lax">{{payment.3}}</td>
+                               </tr>
+=======
                             {% for i in payment %}
                               <tr class="table_row">
                               <td class="tg-0lax">{{i.0}}</td>
@@ -48,7 +58,9 @@
                               <td class="tg-0lax">{{i.3}}</td>
                               </tr>
                             {% endfor %}
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
                             </tbody>
+                            {% endfor %}
                             </table>
                     </div>
                 </div>

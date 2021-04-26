@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+from django.shortcuts import render, redirect
+=======
 from django.shortcuts import render,redirect
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
 from django.http import HttpResponse
 from django.template import loader
 # Create your views here.
@@ -8,22 +12,47 @@ conn = mcdb.connect(host="localhost", user="root", passwd="", database='onlinefo
 print('Successfully connected to database')
 cur = conn.cursor()
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
 #restaurant Page Views START HERE
 def restaurantHomePageView(request):
-    return render(request, 'restaurants/restaurantMaster.html')
+    return render(request, 'restaurants/food.html')
 
 def restaurantFoodItemPageView(request):
-    return render(request, 'restaurants/food.html')
+    cur.execute("SELECT * FROM `tbl_food_items`")
+    data = cur.fetchall()
+    print(list(data))
+
+    return render(request, 'restaurants/food.html', {'items': data})
 
 
 def restaurantOrderMGTPageView(request):
-    return render(request, 'restaurants/order.html')
+
+    cur.execute("SELECT * FROM `tbl_order_details`")
+    data = cur.fetchall()
+
+    print(list(data))
+    return render(request, 'restaurants/order.html', {'orderDetails': data})
 
 def restaurantDeliveryMGTPageView(request):
-    return render(request, 'restaurants/delivery.html')
+    
+    cur.execute("SELECT * FROM `tbl_delivery`")
+    data = cur.fetchall()
+
+    print(list(data))
+    return render(request, 'restaurants/delivery.html', {'deliveries': data})
 
 def restaurantPaymentMGTPageView(request):
-    return render(request, 'restaurants/pay.html')
+
+    cur.execute("SELECT * FROM `tbl_pyt`")
+    data = cur.fetchall()
+
+    print(list(data))
+
+    return render(request, 'restaurants/pay.html', {'payments': data})
 
 
 def restaurantFeedbackMGTPageView(request):
