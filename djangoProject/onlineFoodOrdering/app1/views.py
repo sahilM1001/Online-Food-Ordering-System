@@ -16,16 +16,26 @@ cur = conn.cursor()
 
 #Admin Page Views START HERE
 def adminhomePageView(request):
-    return render(request, 'admin/adminMaster.html')
+    return render(request, 'admin/user.html')
 
 def adminUserMGTPageView(request):
-    return render(request, 'admin/user.html')
+    cur.execute("SELECT * FROM `tbl_user`")
+
+    data = cur.fetchall()
+    print(list(data))
+
+    return render(request, 'admin/user.html', {'users' : data})
 
 def adminUserAddView(request):
     return render(request, 'admin/addUser.html')
 
 def adminOrderMGTPageView(request):
-    return render(request, 'admin/order.html')
+    cur.execute("SELECT * FROM `tbl_order_details`")
+
+    data = cur.fetchall()
+    print(list(data))
+
+    return render(request, 'admin/order.html', {'orders': data})
 
 def adminFeedbackMGTPageView(request):
 

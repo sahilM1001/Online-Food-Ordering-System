@@ -65,7 +65,7 @@
                         <div class="menu__grid__item wow fadeInLeft">
                             <div class="menu__grid__thumb">
                                 <a href="menu-details.html">
-                                    <img src="{%static 'user/images/product/sm-img/burger.jpg'%}" alt="grid item images">
+                                    <img src="{%static 'user/images/product/sm-img/food0.jpg'%}" alt="grid item images">
                                 </a>
                                 <div class="grid__item__offer">
                                     <span>Special</span>
@@ -74,12 +74,12 @@
                             </div>
                             <div class="menu__grid__inner">
                                 <div class="menu__grid__details">
-                                    <h2><a href="menu-details.html">Burger</a></h2>
+                                    <h2><a href="menu-details.html">{{foodItems.0.0}}</a></h2>
                                     <ul class="grid__prize__list">
                                         <li class="old__prize" style="text-decoration: line-through;">150</li>
-                                        <li>100</li>
+                                        <li>{{foodItems.0.1}}</li>
                                     </ul>
-                                    <p>Spicy Vegetable Burger with a crispy patty between freshly baked buns</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>
@@ -93,17 +93,17 @@
                         <div class="menu__grid__item wow fadeInUp">
                             <div class="menu__grid__thumb">
                                 <a href="menu-details.html">
-                                    <img src="{% static 'user/images/menu-grid/food2.jpg'%}" alt="grid item images">
+                                    <img src="{% static 'user/images/product/sm-img/food1.jpg'%}" alt="grid item images">
                                 </a>
                             </div>
                             <div class="menu__grid__inner">
                                 <div class="menu__grid__details">
-                                    <h2><a href="menu-details.html">Chicken Biryani</a></h2>
+                                    <h2><a href="menu-details.html">{{foodItems.1.0}}</a></h2>
                                     <ul class="grid__prize__list">
                                         <li class="old__prize" style="text-decoration: line-through;">250</li>
-                                        <li>200</li>
+                                        <li>{{foodItems.1.1}}</li>
                                     </ul>
-                                    <p>Home-style cooked tangy chicken biryani with the best basmati rice, topped with fresh cilantro</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>
@@ -117,7 +117,7 @@
                         <div class="menu__grid__item wow fadeInRight">
                             <div class="menu__grid__thumb">
                                 <a href="menu-details.html">
-                                    <img src="{%static 'user/images/menu-grid/food3.jpg'%}" alt="grid item images">
+                                    <img src="{%static 'user/images/product/sm-img/food2.jpg'%}" alt="grid item images">
                                 </a>
                                 <div class="grid__item__offer">
                                     <span>Special</span>
@@ -126,12 +126,12 @@
                             </div>
                             <div class="menu__grid__inner">
                                 <div class="menu__grid__details">
-                                    <h2><a href="menu-details.html">Chicken Drumsticks</a></h2>
+                                    <h2><a href="menu-details.html">{{foodItems.2.0}}</a></h2>
                                     <ul class="grid__prize__list">
                                         <li class="old__prize" style="text-decoration: line-through;">250</li>
-                                        <li>150</li>
+                                        <li>{{foodItems.2.1}}</li>
                                     </ul>
-                                    <p>Marinated for hours, tender soft chicken leg pieces, Smoked on Tandoor</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>
@@ -145,17 +145,17 @@
                         <div class="menu__grid__item wow fadeInLeft">
                             <div class="menu__grid__thumb">
                                 <a href="menu-details.html">
-                                    <img src="{%static 'user/images/product/sm-img/paneerChilli.jpg'%}" alt="grid item images">
+                                    <img src="{%static 'user/images/product/sm-img/food3.jpg'%}" alt="grid item images">
                                 </a>
                             </div>
                             <div class="menu__grid__inner">
                                 <div class="menu__grid__details">
-                                    <h2><a href="menu-details.html">Paneer Chilli</a></h2>
+                                    <h2><a href="menu-details.html">{{foodItems.3.0}}</a></h2>
                                     <ul class="grid__prize__list">
                                         <li class="old__prize" style="text-decoration: line-through;">250</li>
-                                        <li>180</li>
+                                        <li>{{foodItems.3.1}}</li>
                                     </ul>
-                                    <p>Tasty paneer cubes marinated in herbs and spices with a smoky flavour</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>
@@ -178,11 +178,11 @@
                             </div>
                             <div class="menu__grid__inner">
                                 <div class="menu__grid__details">
-                                    <h2><a href="menu-details.html">Schezwan Fried Rice</a></h2>
+                                    <h2><a href="menu-details.html">{{foodItems.2.0}}</a></h2>
                                     <ul class="grid__prize__list">
-                                        <li>240</li>
+                                        <li>{{foodItems.2.1}}</li>
                                     </ul>
-                                    <p>A chinese rice dish cooked with an indian twist, spiced up with extravagant herbs and spices from china</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>
@@ -196,17 +196,17 @@
                         <div class="menu__grid__item wow fadeInRight">
                             <div class="menu__grid__thumb">
                                 <a href="menu-details.html">
-                                    <img src="{% static 'user/images/product/sm-img/dal.jpg'%}" alt="grid item images">
+                                    <img src="{% static 'user/images/product/sm-img/food4.jpg'%}" alt="grid item images">
                                 </a>
                             </div>
                             <div class="menu__grid__inner">
                                 <div class="menu__grid__details">
-                                    <h2><a href="menu-details.html">Dal Rice Combo</a></h2>
+                                    <h2><a href="menu-details.html">{{foodItems.4.0}}</a></h2>
                                     <ul class="grid__prize__list">
                                         <li class="old__prize" style="text-decoration: line-through;">200</li>
-                                        <li>190</li>
+                                        <li>{{foodItems.4.1}}</li>
                                     </ul>
-                                    <p>The ever-ready choice of indian households, this dal rice combo will surely make you miss your mother</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>
@@ -220,7 +220,7 @@
                         <div class="menu__grid__item wow fadeInLeft">
                             <div class="menu__grid__thumb">
                                 <a href="menu-details.html">
-                                    <img src="{% static 'user/images/menu-grid/food7.jpg'%}" alt="grid item images">
+                                    <img src="{% static 'user/images/product/sm-img/food5.jfif'%}" alt="grid item images">
                                 </a>
                                 <div class="grid__item__offer">
                                     <span>Special</span>
@@ -229,12 +229,12 @@
                             </div>
                             <div class="menu__grid__inner">
                                 <div class="menu__grid__details">
-                                    <h2><a href="menu-details.html">Punjabi Thali</a></h2>
+                                    <h2><a href="menu-details.html">{{foodItems.5.0}}</a></h2>
                                     <ul class="grid__prize__list">
                                         <li class="old__prize" style="text-decoration: line-through;">350</li>
-                                        <li>275</li>
+                                        <li>{{foodItems.5.1}}</li>
                                     </ul>
-                                    <p>A punjabi thali consisting of all you can ask, the perfect order for all the food connoisseurs</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>
@@ -248,16 +248,16 @@
                         <div class="menu__grid__item wow fadeInUp">
                             <div class="menu__grid__thumb">
                                 <a href="menu-details.html">
-                                    <img src="{%static 'user/images/menu-grid/food8.jpg'%}" alt="grid item images">
+                                    <img src="{%static 'user/images/product/sm-img/food6.jpg'%}" alt="grid item images">
                                 </a>
                             </div>
                             <div class="menu__grid__inner">
                                 <div class="menu__grid__details">
-                                    <h2><a href="menu-details.html">Dosa</a></h2>
+                                    <h2><a href="menu-details.html">{{foodItems.6.0}}</a></h2>
                                     <ul class="grid__prize__list">
-                                        <li>120</li>
+                                        <li>{{foodItems.6.1}}</li>
                                     </ul>
-                                    <p>A perfect choice for breakfast, snacks or even lunch, Dosa's are our favorite and might be your's too.</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>
@@ -285,7 +285,7 @@
                                         <li class="old__prize" style="text-decoration: line-through;">350</li>
                                         <li>270</li>
                                     </ul>
-                                    <p>A fast food meal is the best choice to order when you aren't sure about what to eat!</p>
+                                    <p></p>
                                 </div>
                                 <div class="grid__addto__cart__btn">
                                     <a href="cart.html">Add to Cart</a>

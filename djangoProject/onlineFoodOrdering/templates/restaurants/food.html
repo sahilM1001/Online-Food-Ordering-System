@@ -115,42 +115,23 @@
                         <table class="tg">
                             <thead class="table_header">
                               <tr>
-                                <th>F_ID</th>
-                                <th>F_category_ID</th>
-                                <th>F_Name</th>
-                                <th>F_Price</th>
+                                <th>Food Item ID</th>
+                                <th>Food Category ID</th>
+                                <th>Food Name</th>
+                                <th>Food Price</th>
                               </tr>
                             </thead>
 
+                            {% for item in items %}
                             <tbody>
-
                               <tr class="table_row">
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">01</td>
-                                <td class="tg-0lax">Paneer Chilli</td>
-                                <td class="tg-0lax">180</td>   
-                              </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">201</td>
-                                <td class="tg-0lax">02</td>
-                                <td class="tg-0lax">French Fries</td>
-                                <td class="tg-0lax">80</td>
-                              </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">301</td>
-                                <td class="tg-0lax">03</td>
-                                <td class="tg-0lax">Masala Dosa</td>
-                                <td class="tg-0lax">120</td>
-                              </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">401</td>
-                                <td class="tg-0lax">04</td>
-                                <td class="tg-0lax">Dal-Rice Combo</td>
-                                <td class="tg-0lax">180</td>
+                                <td class="tg-0lax">{{item.0}}</td>
+                                <td class="tg-0lax">{{item.1}}</td>
+                                <td class="tg-0lax">{{item.2}}</td>
+                                <td class="tg-0lax">{{item.3}}</td>   
                               </tr>
                             </tbody>
+                            {% endfor %}
                             </table>
                     </div>
                 </div>

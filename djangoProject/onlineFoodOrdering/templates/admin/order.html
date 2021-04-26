@@ -69,55 +69,30 @@
                         <table class="tg">
                             <thead class="table_header">
                               <tr>
+                                <th>Order Details ID</th>
                                 <th>Order ID</th>
                                 <th>Order Status</th>
-                                <th>Name</th>
                                 <th>Quantity</th>
-                                <th>Items</th>
+                                <th>Food Items</th>
                                 <th>Payment ID</th>
-                                <th>Price</th>
                                 <th>Receipts</th>
                                 
                               </tr>
                             </thead>
+                            {% for order in orders %}
                             <tbody>
                               <tr class="table_row">
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">Delivered</td>
-                                <td class="tg-0lax">Sahil</td>
-                                <td class="tg-0lax">4</td>
-                                <td class="tg-0lax">Paneer, Biryani</td>
-                                <td class="tg-0lax">151021</td>
-                                <td class="tg-0lax">570</td>
+                                <td class="tg-0lax">{{order.0}}</td>
+                                <td class="tg-0lax">{{order.1}}</td>
+                                <td class="tg-0lax">{{order.2}}</td>
+                                <td class="tg-0lax">{{order.3}}</td>
+                                <td class="tg-0lax">{{order.4}}</td>
+                                <td class="tg-0lax">{{order.5}}</td>
+                                
                                 <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
-                               
-                                
-                              </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">102</td>
-                                <td class="tg-0lax">Out For Delivery</td>
-                                <td class="tg-0lax">Ashley</td>
-                                <td class="tg-0lax">2</td>
-                                <td class="tg-0lax">Burger, French Fries</td>
-                                <td class="tg-0lax">151022</td>
-                                <td class="tg-0lax">210</td>
-                                <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
-                                
-                                
-                              </tr>
-                              <tr class="table_row">
-                                <td class="tg-0lax">103</td>
-                                <td class="tg-0lax">Preparing</td>
-                                <td class="tg-0lax">Rob</td>
-                                <td class="tg-0lax">1</td>
-                                <td class="tg-0lax">Noodles</td>
-                                <td class="tg-0lax">151023</td>
-                                <td class="tg-0lax">150</td>
-                                <td class="tg-0lax"><a href="./receipt.html">View Details</a></td>
-                                
-                                
                               </tr>
                             </tbody>
+                            {% endfor %}
                             </table>
                     </div>
                 </div>

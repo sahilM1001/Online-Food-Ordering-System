@@ -40,29 +40,16 @@
                                 <th>Date</th>
                               </tr>
                             </thead>
+                            {% for payment in payments %}
                             <tbody>
                               <tr class="table_row">
-                                <td class="tg-0lax">001</td>
-                                <td class="tg-0lax">101</td>
-                                <td class="tg-0lax">Cash</td>
-                                <td class="tg-0lax">04-08-2020</td>
+                                <td class="tg-0lax">{{payment.0}}</td>
+                                <td class="tg-0lax">{{payment.1}}</td>
+                                <td class="tg-0lax">{{payment.2}}</td>
+                                <td class="tg-0lax">{{payment.3}}</td>
                                </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">002</td>
-                                <td class="tg-0lax">102</td>
-                                <td class="tg-0lax">Online</td>
-                                <td class="tg-0lax">01-09-2020</td>
-                              </tr>
-
-                              <tr class="table_row">
-                                <td class="tg-0lax">003</td>
-                                <td class="tg-0lax">103</td>
-                                <td class="tg-0lax">Cash</td>
-                                <td class="tg-0lax">05-01-2021</td>
-                              </tr>
-
                             </tbody>
+                            {% endfor %}
                             </table>
                     </div>
                 </div>
