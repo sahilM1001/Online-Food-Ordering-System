@@ -31,15 +31,16 @@
                             </div>
                         <hr>
                         <br>
-                        <table class="tg">
+                              <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
-                                <th>Payment ID</th>
-                                <th>Order ID</th>
+                                <th>Payment Id </th>
+                                <th>Order ID </th>
                                 <th>Payment Mode</th>
-                                <th>Date</th>
+                                <th>Payment Date</th>
                               </tr>
                             </thead>
+<<<<<<< HEAD
                             {% for payment in payments %}
                             <tbody>
                               <tr class="table_row">
@@ -48,6 +49,16 @@
                                 <td class="tg-0lax">{{payment.2}}</td>
                                 <td class="tg-0lax">{{payment.3}}</td>
                                </tr>
+=======
+                            {% for i in payment %}
+                              <tr class="table_row">
+                              <td class="tg-0lax">{{i.0}}</td>
+                              <td class="tg-0lax">{{i.1}}</td>
+                              <td class="tg-0lax">{{i.2}}</td>
+                              <td class="tg-0lax">{{i.3}}</td>
+                              </tr>
+                            {% endfor %}
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
                             </tbody>
                             {% endfor %}
                             </table>

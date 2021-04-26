@@ -53,8 +53,25 @@ def feedbacklisting(request):
     print(list(data))
     return render(request, 'admin/feedback.html', {'feedback': data})
 
+<<<<<<< HEAD
 
 def adminLogout(request):
     return render(request, 'admin/logout.html')
+=======
+def orderlisting(request):
+    cur.execute("SELECT * FROM `tbl_order_details`")
+    data = cur.fetchall()
+    #return list(data)
+    print(list(data))
+    return render(request, 'admin/order.html', {'orderDetails': data})
+
+def userlisting(request):
+    cur.execute("SELECT * FROM `tbl_user`")
+    data = cur.fetchall()
+    #return list(data)
+    print(list(data))
+    return render(request, 'admin/user.html', {'userDetails': data})
+
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
 #Admin Page Views END HERE
 

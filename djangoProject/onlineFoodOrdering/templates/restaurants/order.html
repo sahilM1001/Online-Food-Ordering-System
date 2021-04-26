@@ -59,9 +59,10 @@
                             </div>
                         <hr>
                         <br>
-                        <table class="tg">
+                              <table border='1' class="tg">
                             <thead class="table_header">
                               <tr>
+<<<<<<< HEAD
                                 <th>Order Detail ID</th>
                                 <th>Order ID</th>
                                 <th>Order Status</th>
@@ -87,7 +88,26 @@
                                 <td class="tg-0lax"><a href=""> Accept</a> | <a href=""> Reject</a></td>
                                
                                 
+=======
+                                <th>Order  Detail ID </th>
+                                <th>Order ID </th>
+                                <th>Order Status</th>
+                                <th>Order Quantity</th>
+                                <th>Food ID</th>
+                                <th>Payment ID</th>
                               </tr>
+                            </thead>
+                            {% for i in order %}
+                              <tr class="table_row">
+                              <td class="tg-0lax">{{i.0}}</td>
+                              <td class="tg-0lax">{{i.1}}</td>
+                              <td class="tg-0lax">{{i.2}}</td>
+                              <td class="tg-0lax">{{i.3}}</td>
+                              <td class="tg-0lax">{{i.4}}</td>
+                              <td class="tg-0lax">{{i.5}}</td>
+>>>>>>> eea31147b57b7c8c943da486ddc8b71d11f199c7
+                              </tr>
+                            {% endfor %}
                             </tbody>
                             {% endfor %}
                             </table>
